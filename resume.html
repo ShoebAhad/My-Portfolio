@@ -1,0 +1,2212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Portfolio - Ahad Bin Islam Shoeb | ML / Data Science / Cybersecurity</title>
+    <meta name="description" content="Academic portfolio for Masters/PhD application in Machine Learning, Data Science, and Cybersecurity, showcasing research experience, technical skills, and leadership roles.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        :root {
+            --primary-color: #1a3a5f;
+            --secondary-color: #0d6efd;
+            --accent-color: #dc3545;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+            --text-color: #212529;
+            --bg-color: #fff;
+            --muted-color: #6c757d;
+            --border-color: #dee2e6;
+            --success-color: #198754;
+            --info-color: #0dcaf0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #0d4377 100%);
+            color: white;
+            padding: 40px 0;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--secondary-color);
+            margin-bottom: 25px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .profile-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .header-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-text h2 {
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+            color: rgba(255, 255, 255, 0.85);
+            letter-spacing: 0.5px;
+        }
+        
+        .header-subtext {
+            font-size: 1.05rem;
+            color: var(--info-color);
+            margin-bottom: 18px;
+            letter-spacing: 0.5px;
+            font-weight: 300;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 18px;
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.4rem;
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+            background-color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--dark-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 18px 20px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            display: block;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            position: relative;
+        }
+
+        nav a:hover {
+            background-color: var(--primary-color);
+            color: var(--info-color);
+        }
+        
+        nav a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--info-color);
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover:after {
+            width: 100%;
+        }
+
+        /* Main Content */
+        main {
+            padding: 60px 0;
+            background-color: #f9fafb;
+        }
+
+        section {
+            margin-bottom: 60px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid var(--border-color);
+        }
+        
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--secondary-color);
+            font-size: 1.8rem;
+            font-weight: 600;
+            position: relative;
+            letter-spacing: 0.5px;
+        }
+        
+        section h2:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            background-color: var(--info-color);
+            bottom: -2px;
+            left: 0;
+        }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .about-text {
+            flex: 2;
+        }
+
+        /* Education Section */
+        .education-item {
+            margin-bottom: 35px;
+            padding-left: 20px;
+            border-left: 3px solid var(--border-color);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .education-item:hover {
+            border-left-color: var(--secondary-color);
+            padding-left: 25px;
+        }
+        
+        .education-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .education-item:before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: var(--secondary-color);
+            left: -9px;
+            top: 6px;
+        }
+
+        .education-year {
+            font-weight: 600;
+            color: var(--secondary-color);
+            font-size: 0.95rem;
+            display: inline-block;
+            padding: 3px 10px;
+            background-color: rgba(13, 110, 253, 0.1);
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+
+        .education-degree {
+            font-weight: 700;
+            margin: 8px 0;
+            font-size: 1.2rem;
+            color: var(--dark-color);
+        }
+
+        .education-institution {
+            font-style: italic;
+            color: var(--muted-color);
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .education-institution:before {
+            content: '\f19c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: var(--muted-color);
+        }
+
+        .education-details {
+            margin-top: 12px;
+            padding: 10px;
+            background-color: var(--light-color);
+            border-radius: 6px;
+            font-size: 0.95rem;
+        }
+        
+        .education-details p {
+            margin-bottom: 8px;
+        }
+        
+        .education-details p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Experience Section */
+        .experience-item {
+            margin-bottom: 35px;
+            position: relative;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: var(--light-color);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .experience-item:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-3px);
+        }
+
+        .experience-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .experience-title {
+            font-weight: 700;
+            margin: 8px 0;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+
+        .experience-company {
+            font-style: italic;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--dark-color);
+            font-size: 1.05rem;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .experience-period {
+            color: var(--secondary-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 3px 10px;
+            background-color: rgba(13, 110, 253, 0.1);
+            border-radius: 4px;
+            font-style: normal;
+        }
+
+        .experience-description {
+            margin-top: 15px;
+        }
+        
+        .experience-description ul {
+            padding-left: 20px;
+        }
+        
+        .experience-description li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+        
+        .experience-description li:before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: var(--success-color);
+            margin-right: 8px;
+            font-size: 0.9rem;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            background-color: white;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-color: var(--secondary-color);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .project-card:hover .project-image {
+            transform: scale(1.1);
+        }
+
+        .project-info {
+            padding: 20px;
+            position: relative;
+        }
+        
+        .project-info:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 20px;
+            right: 20px;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.05) 100%);
+        }
+
+        .project-title {
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--primary-color);
+            font-size: 1.15rem;
+        }
+
+        .project-description {
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .project-tag {
+            background-color: rgba(13, 110, 253, 0.1);
+            color: var(--secondary-color);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .project-tag:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .project-links {
+            margin-top: 15px;
+            display: flex;
+            gap: 15px;
+        }
+        
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .project-link:hover {
+            color: var(--primary-color);
+            transform: translateX(3px);
+        }
+
+        /* Skills Section */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .skills-category {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .skills-category h3 {
+            margin-bottom: 20px;
+            color: var(--dark-color);
+            font-size: 1.15rem;
+            padding-bottom: 8px;
+            border-bottom: 2px dashed var(--border-color);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .skills-category h3:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            background-color: var(--secondary-color);
+            bottom: -2px;
+            left: 0;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill-item {
+            background-color: var(--light-color);
+            padding: 10px 18px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+            font-weight: 500;
+        }
+        
+        .skill-item:hover {
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transform: translateY(-3px);
+            border-color: var(--secondary-color);
+        }
+
+        .skill-icon {
+            color: var(--secondary-color);
+        }
+        
+        /* Skill progress indicators */
+        .skill-with-level {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .skill-name {
+            font-weight: 500;
+        }
+        
+        .skill-level {
+            color: var(--muted-color);
+            font-size: 0.85rem;
+        }
+        
+        .skill-progress {
+            height: 8px;
+            background-color: var(--light-color);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .skill-progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--secondary-color) 0%, var(--info-color) 100%);
+            border-radius: 4px;
+        }
+
+        /* Publications Section */
+        .publications-list {
+            list-style-type: none;
+        }
+
+        .publication-item {
+            margin-bottom: 30px;
+            padding: 25px;
+            border-bottom: 1px solid var(--border-color);
+            background-color: var(--light-color);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .publication-item:hover {
+            background-color: white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transform: translateY(-5px);
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .publication-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .publication-index {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        .publication-title {
+            font-weight: 700;
+            margin-bottom: 12px;
+            font-size: 1.15rem;
+            color: var(--primary-color);
+            line-height: 1.4;
+        }
+
+        .publication-authors {
+            font-style: italic;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+        
+        .publication-authors strong {
+            font-style: normal;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .publication-journal {
+            color: var(--secondary-color);
+            margin-bottom: 12px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .publication-journal:before {
+            content: '\f5da';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+        }
+        
+        .publication-abstract {
+            margin: 15px 0;
+            padding: 12px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            font-size: 0.95rem;
+            border-left: 3px solid var(--border-color);
+        }
+
+        .publication-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 15px;
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .publication-link:before {
+            content: '\f15c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+        }
+
+        .publication-link:hover {
+            color: var(--accent-color);
+            transform: translateX(5px);
+        }
+        
+        .publication-citation {
+            margin-top: 12px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            color: var(--muted-color);
+            border: 1px solid var(--border-color);
+        }
+
+        /* Awards Section */
+        .awards-list {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .award-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+        
+        .award-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-color: var(--secondary-color);
+        }
+
+        .award-icon {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+            margin-right: 15px;
+            margin-top: 3px;
+            background-color: rgba(220, 53, 69, 0.1);
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .award-content h3 {
+            margin-bottom: 8px;
+            color: var(--dark-color);
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        .award-content p {
+            color: var(--text-color);
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .award-date {
+            color: var(--secondary-color);
+            font-size: 0.85rem;
+            display: inline-block;
+            padding: 3px 10px;
+            background-color: rgba(13, 110, 253, 0.1);
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        
+        .award-issuer {
+            display: block;
+            font-style: italic;
+            color: var(--muted-color);
+            margin-top: 8px;
+            font-size: 0.9rem;
+        }
+        
+        /* Purpose Section */
+        .purpose-content {
+            background-color: #f8f9fa;
+            padding: 35px;
+            border-radius: 12px;
+            position: relative;
+            border-left: 5px solid var(--secondary-color);
+            box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .purpose-content:before {
+            content: '"';
+            font-size: 120px;
+            color: rgba(13, 110, 253, 0.05);
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-family: Georgia, serif;
+        }
+        
+        .purpose-text {
+            padding-left: 10px;
+            position: relative;
+            z-index: 1;
+            line-height: 1.8;
+        }
+        
+        .purpose-heading {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding-bottom: 15px;
+        }
+        
+        .purpose-text p {
+            margin-bottom: 18px;
+            text-align: justify;
+        }
+
+        /* Video Section */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .video-container iframe, 
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-description {
+            margin-top: 10px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .contact-item {
+            flex: 1;
+            min-width: 250px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-icon {
+            background-color: var(--secondary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 1.2rem;
+        }
+
+        .contact-details p {
+            margin: 0;
+        }
+
+        .contact-label {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .footer-text {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Modal for Project Details */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .modal.active {
+            display: block;
+            opacity: 1;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            transform: translateY(-50px);
+            opacity: 0;
+            transition: all 0.3s;
+        }
+
+        .modal.active .modal-content {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #666;
+            transition: color 0.3s;
+        }
+
+        .modal-close:hover {
+            color: var(--accent-color);
+        }
+
+        .modal-body {
+            margin-top: 20px;
+        }
+
+        .modal-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-image {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav li {
+                width: 100%;
+                text-align: center;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-content {
+                width: 90%;
+                margin: 20% auto;
+            }
+        }
+
+        /* Image Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            cursor: pointer;
+            height: 150px;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.05);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px;
+            font-size: 0.8rem;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item:hover .gallery-caption {
+            opacity: 1;
+        }
+
+        /* Toggle Menu for Mobile */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+
+            nav ul {
+                display: none;
+                width: 100%;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* File Upload Styling */
+        .upload-container {
+            margin-top: 20px;
+            padding: 20px;
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .upload-container:hover {
+            border-color: var(--secondary-color);
+        }
+
+        .upload-input {
+            display: none;
+        }
+
+        .upload-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .upload-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .upload-preview {
+            margin-top: 20px;
+            max-width: 100%;
+            max-height: 300px;
+            display: none;
+        }
+
+        .upload-video-preview {
+            width: 100%;
+            max-height: 300px;
+            display: none;
+        }
+
+        .mobile-only {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-only {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="header-content">
+                <img src="images/My_photo.jpg" alt="Your Profile" class="profile-image" id="profileImage">
+                <div class="header-text">
+                    <h1>Ahad Bin Islam Shoeb</h1>
+                    <h2>ML/AI Researcher • Data Scientist • Cybersecurity Specialist</h2>
+                    <p class="header-subtext">MSc/PhD Candidate in Machine Learning & Security</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ahad-bin-islam-shoeb-a810611a2/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/ShoebAhad" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" aria-label="Google Scholar Profile"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="ahadbinislam1111@gmail.com" target="_blank" aria-label="Email Contact"><i class="fas fa-envelope"></i></a>
+                        <a href="#" target="_blank" aria-label="ResearchGate Profile"><i class="fab fa-researchgate"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul id="navMenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#extracurricular">Extracurricular</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#purpose">Purpose Statement</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- About Section -->
+        <section id="about" class="fade-in">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a highly motivated and results-driven professional specializing in Machine Learning, Data Science, and Cybersecurity. With a strong academic background and practical experience in developing AI solutions and securing digital assets, I am seeking to advance my expertise through a Masters/PhD program.</p>
+                    <p>My research interests include [your specific interests], and I am passionate about [your passion]. Through my academic pursuits, I aim to contribute to the advancement of technology and make a meaningful impact in the field.</p>
+                    <p>Throughout my career, I have demonstrated strong analytical skills, problem-solving abilities, and a commitment to continuous learning. I am skilled in various programming languages, machine learning frameworks, and cybersecurity tools that enable me to tackle complex challenges effectively.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="fade-in">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="education-year">2018 - 2022</div>
+                <div class="education-degree">Bachelor of Science in Computer Science</div>
+                <div class="education-institution">University Name</div>
+                <div class="education-details">
+                    <p>GPA: 3.8/4.0</p>
+                    <p>Relevant Coursework: Machine Learning, Artificial Intelligence, Data Structures and Algorithms, Database Management Systems, Network Security, Cryptography</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-year">2016 - 2018</div>
+                <div class="education-degree">Associate Degree in Information Technology</div>
+                <div class="education-institution">College Name</div>
+                <div class="education-details">
+                    <p>GPA: 3.7/4.0</p>
+                    <p>Relevant Coursework: Programming Fundamentals, Computer Networks, Web Development, Information Security</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="fade-in">
+            <h2>Professional Experience</h2>
+            <div class="experience-item">
+                <div class="experience-company">
+                    <span>Tech Company Name</span>
+                    <span class="experience-period">Jan 2022 - Present</span>
+                </div>
+                <div class="experience-title">Data Scientist</div>
+                <div class="experience-description">
+                    <ul>
+                        <li>Developed and implemented machine learning models to predict customer behavior, resulting in a 15% increase in customer retention.</li>
+                        <li>Collaborated with cross-functional teams to design and deploy data pipelines for efficient data processing and analysis.</li>
+                        <li>Created visualization dashboards to communicate insights to stakeholders, improving decision-making processes.</li>
+                        <li>Conducted A/B testing to optimize algorithms and enhance model performance by 20%.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-company">
+                    <span>Tech Startup Name</span>
+                    <span class="experience-period">May 2020 - Dec 2021</span>
+                </div>
+                <div class="experience-title">ML Research Intern</div>
+                <div class="experience-description">
+                    <ul>
+                        <li>Assisted in developing natural language processing models for sentiment analysis with 85% accuracy.</li>
+                        <li>Implemented data preprocessing techniques to handle large datasets efficiently.</li>
+                        <li>Conducted literature reviews and participated in weekly research meetings to discuss the latest advancements in ML.</li>
+                        <li>Contributed to a research paper published in [Conference/Journal Name].</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="fade-in">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><i class="fas fa-code skill-icon"></i> Python</div>
+                        <div class="skill-item"><i class="fas fa-code skill-icon"></i> R</div>
+                        <div class="skill-item"><i class="fas fa-code skill-icon"></i> Java</div>
+                        <div class="skill-item"><i class="fas fa-code skill-icon"></i> SQL</div>
+                        <div class="skill-item"><i class="fas fa-code skill-icon"></i> JavaScript</div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>ML/AI Frameworks</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><i class="fas fa-brain skill-icon"></i> TensorFlow</div>
+                        <div class="skill-item"><i class="fas fa-brain skill-icon"></i> PyTorch</div>
+                        <div class="skill-item"><i class="fas fa-brain skill-icon"></i> Scikit-learn</div>
+                        <div class="skill-item"><i class="fas fa-brain skill-icon"></i> Keras</div>
+                        <div class="skill-item"><i class="fas fa-brain skill-icon"></i> NLTK</div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Data Analysis</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><i class="fas fa-chart-line skill-icon"></i> Pandas</div>
+                        <div class="skill-item"><i class="fas fa-chart-line skill-icon"></i> NumPy</div>
+                        <div class="skill-item"><i class="fas fa-chart-line skill-icon"></i> Matplotlib</div>
+                        <div class="skill-item"><i class="fas fa-chart-line skill-icon"></i> Tableau</div>
+                        <div class="skill-item"><i class="fas fa-chart-line skill-icon"></i> Power BI</div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Cybersecurity</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><i class="fas fa-shield-alt skill-icon"></i> Network Security</div>
+                        <div class="skill-item"><i class="fas fa-shield-alt skill-icon"></i> Cryptography</div>
+                        <div class="skill-item"><i class="fas fa-shield-alt skill-icon"></i> Penetration Testing</div>
+                        <div class="skill-item"><i class="fas fa-shield-alt skill-icon"></i> Security Analysis</div>
+                        <div class="skill-item"><i class="fas fa-shield-alt skill-icon"></i> Vulnerability Assessment</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="fade-in">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-project="project1">
+                    <img src="/api/placeholder/400/300" alt="Project 1" class="project-image">
+                    <div class="project-info">
+                        <div class="project-title">Sentiment Analysis System</div>
+                        <div class="project-description">Developed a machine learning model to analyze customer reviews and classify sentiments with 90% accuracy.</div>
+                        <div class="project-tags">
+                            <span class="project-tag">NLP</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">TensorFlow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="project2">
+                    <img src="/api/placeholder/400/300" alt="Project 2" class="project-image">
+                    <div class="project-info">
+                        <div class="project-title">Intrusion Detection System</div>
+                        <div class="project-description">Created a cybersecurity solution to detect and prevent network intrusions using machine learning algorithms.</div>
+                        <div class="project-tags">
+                            <span class="project-tag">Cybersecurity</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Random Forest</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-project="project3">
+                    <img src="/api/placeholder/400/300" alt="Project 3" class="project-image">
+                    <div class="project-info">
+                        <div class="project-title">Predictive Analytics Dashboard</div>
+                        <div class="project-description">Built an interactive dashboard to visualize and predict business metrics for decision-making.</div>
+                        <div class="project-tags">
+                            <span class="project-tag">Data Visualization</span>
+                            <span class="project-tag">R</span>
+                            <span class="project-tag">Tableau</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="fade-in">
+            <h2>Publications & Research</h2>
+            <ul class="publications-list">
+                <li class="publication-item">
+                    <div class="publication-title">"Novel Approach to Malware Detection Using Deep Learning Techniques"</div>
+                    <div class="publication-authors">Your Name, Co-author Name, Co-author Name</div>
+                    <div class="publication-journal">Journal of Cybersecurity, Vol. 12, Issue 3, 2022</div>
+                    <a href="#" class="publication-link">View Publication</a>
+                </li>
+                <li class="publication-item">
+                    <div class="publication-title">"Improving Accuracy of Sentiment Analysis through Hybrid CNN-LSTM Models"</div>
+                    <div class="publication-authors">Your Name, Co-author Name</div>
+                    <div class="publication-journal">International Conference on Machine Learning, 2021</div>
+                    <a href="#" class="publication-link">View Publication</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Extracurricular Activities Section -->
+        <section id="extracurricular" class="fade-in">
+            <h2>Extracurricular Activities</h2>
+            
+            <!-- Academic Startup -->
+            <div class="extracurricular-item">
+                <h3>Founder & CEO, Academic Affiliation</h3>
+                <p class="extracurricular-period">2020 - Present</p>
+                <div class="extracurricular-description">
+                    <p>Founded and developed Academic Affiliation, a platform dedicated to supporting undergraduate students from multiple universities with resources, mentorship, and educational support.</p>
+                    <p>The platform has successfully served students from the following partner universities:</p>
+                    
+                    <!-- University Logos -->
+                    <div class="logo-container">
+                        <div class="logo-item">
+                            <img src="/api/placeholder/100/100" alt="University of Dhaka" class="university-logo">
+                            <span class="logo-caption">University of Dhaka</span>
+                        </div>
+                        <div class="logo-item">
+                            <img src="/api/placeholder/100/100" alt="BUET" class="university-logo">
+                            <span class="logo-caption">BUET</span>
+                        </div>
+                        <div class="logo-item">
+                            <img src="/api/placeholder/100/100" alt="University of Rajshahi" class="university-logo">
+                            <span class="logo-caption">University of Rajshahi</span>
+                        </div>
+                        <div class="logo-item">
+                            <img src="/api/placeholder/100/100" alt="Jahangirnagar University" class="university-logo">
+                            <span class="logo-caption">Jahangirnagar University</span>
+                        </div>
+                    </div>
+                    
+                    <div class="action-links">
+                        <a href="#" class="action-link" id="startupLink">
+                            <i class="fas fa-external-link-alt"></i> Visit Platform
+                        </a>
+                        <div class="link-edit">
+                            <input type="text" id="startupLinkInput" placeholder="Enter URL here" class="link-input">
+                            <button onclick="updateLink('startupLink', 'startupLinkInput')" class="link-btn">Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Student Leadership -->
+            <div class="extracurricular-item">
+                <h3>Joint Convener (Top Ranked), Bangladesh Democratic Student's Society</h3>
+                <p class="extracurricular-period">2019 - Present</p>
+                <div class="extracurricular-description">
+                    <p>Serving in a leadership role at one of the prominent student organizations in Bangladesh, where I help coordinate student activities, advocate for student rights, and organize events focused on democratic values and student welfare.</p>
+                    
+                    <!-- Organization Logo -->
+                    <div class="logo-single">
+                        <img src="/api/placeholder/100/100" alt="BDSS Logo" class="org-logo">
+                        <span class="logo-caption">Bangladesh Democratic Student's Society</span>
+                    </div>
+                    
+                    <div class="action-links">
+                        <a href="#" class="action-link" id="bdssLink">
+                            <i class="fas fa-external-link-alt"></i> Organization Website
+                        </a>
+                        <div class="link-edit">
+                            <input type="text" id="bdssLinkInput" placeholder="Enter URL here" class="link-input">
+                            <button onclick="updateLink('bdssLink', 'bdssLinkInput')" class="link-btn">Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- IT Consultancy -->
+            <div class="extracurricular-item">
+                <h3>IT Consultant, Supreme Court of Bangladesh</h3>
+                <p class="extracurricular-period">2021 - 2022</p>
+                <div class="extracurricular-description">
+                    <p>Provided expertise in Digital Forensics and Cybersecurity to the Prosecutors of Crime Tribunals Branch. Developed website solutions to enhance digital presence and information management for legal proceedings.</p>
+                    <p>Consulted on sensitive cybersecurity matters and provided technical guidance for handling digital evidence in court cases.</p>
+                    
+                    <!-- Supreme Court Image -->
+                    <div class="consultancy-image">
+                        <img src="/api/placeholder/500/300" alt="Supreme Court of Bangladesh" class="court-image">
+                        <span class="image-caption">Supreme Court of Bangladesh - Digital Forensics Consultancy</span>
+                    </div>
+                    
+                    <div class="action-links">
+                        <a href="#" class="action-link" id="courtLink">
+                            <i class="fas fa-external-link-alt"></i> Project Details
+                        </a>
+                        <div class="link-edit">
+                            <input type="text" id="courtLinkInput" placeholder="Enter URL here" class="link-input">
+                            <button onclick="updateLink('courtLink', 'courtLinkInput')" class="link-btn">Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Keynote Speaker -->
+            <div class="extracurricular-item">
+                <h3>Keynote Speaker, University of Dhaka Education System Forum</h3>
+                <p class="extracurricular-period">2022</p>
+                <div class="extracurricular-description">
+                    <p>Invited as a student leader to speak alongside the Vice Chancellor about the education system at the University of Dhaka. Presented insights on student perspectives and proposed improvements to enhance educational outcomes.</p>
+                    
+                    <!-- Video Embed -->
+                    <div class="video-container">
+                        <iframe src="about:blank" frameborder="0" allowfullscreen class="keynote-video"></iframe>
+                    </div>
+                    <div class="video-info">
+                        <span class="video-caption">Keynote Speech on Educational Reform - University of Dhaka, 2022</span>
+                    </div>
+                    
+                    <div class="action-links">
+                        <a href="#" class="action-link" id="keynoteLink">
+                            <i class="fab fa-youtube"></i> Watch Full Video
+                        </a>
+                        <div class="link-edit">
+                            <input type="text" id="keynoteLinkInput" placeholder="Enter YouTube or video URL" class="link-input">
+                            <button onclick="updateLink('keynoteLink', 'keynoteLinkInput')" class="link-btn">Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- YSSE Leadership Program -->
+            <div class="extracurricular-item">
+                <h3>Program Conductor, YSSE Youth Leadership Platform</h3>
+                <p class="extracurricular-period">2023</p>
+                <div class="extracurricular-description">
+                    <p>Conducted programs focused on "Productivity of AI in Leadership" at YSSE, one of the largest youth leadership platforms in the country. Guided young leaders on leveraging AI tools for enhancing leadership capabilities and organizational efficiency.</p>
+                    
+                    <!-- YSSE Logo -->
+                    <div class="logo-single">
+                        <img src="/api/placeholder/100/100" alt="YSSE Logo" class="org-logo">
+                        <span class="logo-caption">Youth Society for Social Empowerment</span>
+                    </div>
+                    
+                    <div class="action-links">
+                        <a href="#" class="action-link" id="ysseLink">
+                            <i class="fas fa-external-link-alt"></i> Program Details
+                        </a>
+                        <div class="link-edit">
+                            <input type="text" id="ysseLinkInput" placeholder="Enter URL here" class="link-input">
+                            <button onclick="updateLink('ysseLink', 'ysseLinkInput')" class="link-btn">Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+<section id="awards" class="fade-in">
+    <h2>Awards & Honors</h2>
+    <ul class="awards-list">
+        <li class="award-item">
+            <div class="award-icon">
+                <i class="fas fa-trophy"></i>
+            </div>
+            <div class="award-content">
+                <h3>Best Research Paper Award</h3>
+                <p>Awarded for outstanding contribution in the field of machine learning and cybersecurity research.</p>
+                <span class="award-date">2022</span>
+                <span class="award-issuer">International Conference on Machine Learning & Security</span>
+            </div>
+        </li>
+        <li class="award-item">
+            <div class="award-icon">
+                <i class="fas fa-medal"></i>
+            </div>
+            <div class="award-content">
+                <h3>Academic Excellence Scholarship</h3>
+                <p>Received for maintaining outstanding academic performance throughout undergraduate studies.</p>
+                <span class="award-date">2018-2022</span>
+                <span class="award-issuer">University Name</span>
+            </div>
+        </li>
+        <li class="award-item">
+            <div class="award-icon">
+                <i class="fas fa-award"></i>
+            </div>
+            <div class="award-content">
+                <h3>Hackathon Winner</h3>
+                <p>First place in the national cybersecurity hackathon for developing an innovative solution for network security.</p>
+                <span class="award-date">2021</span>
+                <span class="award-issuer">National Cybersecurity Association</span>
+            </div>
+        </li>
+        <li class="award-item">
+            <div class="award-icon">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="award-content">
+                <h3>Leadership Excellence Award</h3>
+                <p>Recognized for exceptional leadership qualities and contributions to student community.</p>
+                <span class="award-date">2020</span>
+                <span class="award-issuer">Student Leadership Council</span>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<!-- Purpose Statement Section -->
+<section id="purpose" class="fade-in">
+    <h2>Purpose Statement</h2>
+    <div class="purpose-content">
+        <div class="purpose-text">
+            <h3 class="purpose-heading">Why I'm Pursuing Advanced Studies in ML & Cybersecurity</h3>
+            <p>My journey in the fields of Machine Learning and Cybersecurity has been driven by a profound interest in creating intelligent systems that can protect digital infrastructure while advancing technological capabilities. Having worked on several projects that bridge these domains, I have witnessed firsthand the transformative potential of AI-powered security solutions.</p>
+            
+            <p>Through my Masters/PhD studies, I aim to explore the intersection of machine learning algorithms and cybersecurity frameworks to develop novel approaches for threat detection, vulnerability assessment, and automated defense mechanisms. My research interests specifically focus on developing adaptive security systems that can learn from and respond to emerging threats in real-time, while maintaining privacy and ethical considerations.</p>
+            
+            <p>Beyond academic pursuits, I am committed to translating research into practical applications that can benefit organizations and individuals. I believe that the next generation of cybersecurity solutions will rely heavily on sophisticated machine learning techniques, and I aspire to be at the forefront of this evolution, contributing meaningful research that bridges theoretical advancements with real-world implementation.</p>
+            
+            <p>Ultimately, my goal is to contribute to a safer digital ecosystem where artificial intelligence serves as a powerful ally in protecting critical infrastructure, personal data, and digital rights. Through rigorous research, collaboration with industry partners, and a commitment to ethical AI development, I hope to make significant contributions that advance both fields and address the complex security challenges of our increasingly connected world.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Media Section -->
+<section id="media" class="fade-in">
+    <h2>Media</h2>
+    <div class="media-container">
+        <div class="media-circle">
+            <img src="/api/placeholder/400/400" alt="Your Profile" class="media-profile-image">
+            <div class="media-links">
+                <a href="#" class="media-link" title="YouTube Channel">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="media-link" title="Personal Blog">
+                    <i class="fas fa-blog"></i>
+                </a>
+                <a href="#" class="media-link" title="Podcast">
+                    <i class="fas fa-podcast"></i>
+                </a>
+                <a href="#" class="media-link" title="Medium Articles">
+                    <i class="fab fa-medium"></i>
+                </a>
+                <a href="#" class="media-link" title="Tech Talks">
+                    <i class="fas fa-microphone-alt"></i>
+                </a>
+            </div>
+        </div>
+        <div class="media-description">
+            <h3>My Digital Presence</h3>
+            <p>Connect with me across various platforms where I share insights, research findings, tutorials, and thoughts on machine learning, data science, and cybersecurity. Click on any of the icons to explore my content.</p>
+            
+            <div class="media-features">
+                <div class="media-feature">
+                    <div class="media-feature-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="media-feature-text">
+                        <h4>YouTube Channel</h4>
+                        <p>Technical tutorials, research explanations, and educational content on ML & security</p>
+                    </div>
+                </div>
+                
+                <div class="media-feature">
+                    <div class="media-feature-icon">
+                        <i class="fas fa-blog"></i>
+                    </div>
+                    <div class="media-feature-text">
+                        <h4>Technical Blog</h4>
+                        <p>In-depth articles, code walkthroughs, and research commentary</p>
+                    </div>
+                </div>
+                
+                <div class="media-feature">
+                    <div class="media-feature-icon">
+                        <i class="fas fa-podcast"></i>
+                    </div>
+                    <div class="media-feature-text">
+                        <h4>Podcast Appearances</h4>
+                        <p>Discussions on emerging trends in AI, ML, and cybersecurity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Awards Section Styling */
+.awards-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.award-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.award-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--secondary-color);
+}
+
+.award-icon {
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    margin-right: 15px;
+    margin-top: 3px;
+    background-color: rgba(220, 53, 69, 0.1);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.award-content h3 {
+    margin-bottom: 8px;
+    color: var(--dark-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.award-content p {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.award-date {
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+    display: inline-block;
+    padding: 3px 10px;
+    background-color: rgba(13, 110, 253, 0.1);
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.award-issuer {
+    display: block;
+    font-style: italic;
+    color: var(--muted-color);
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+/* Purpose Statement Styling */
+.purpose-content {
+    background-color: #f8f9fa;
+    padding: 35px;
+    border-radius: 12px;
+    position: relative;
+    border-left: 5px solid var(--secondary-color);
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.purpose-content:before {
+    content: '"';
+    font-size: 120px;
+    color: rgba(13, 110, 253, 0.05);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: Georgia, serif;
+}
+
+.purpose-text {
+    padding-left: 10px;
+    position: relative;
+    z-index: 1;
+    line-height: 1.8;
+}
+
+.purpose-heading {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px;
+}
+
+.purpose-text p {
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+/* Media Section Styling */
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.media-circle {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.media-profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.media-links {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(26, 58, 95, 0.85);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.media-circle:hover .media-links {
+    opacity: 1;
+}
+
+.media-circle:hover .media-profile-image {
+    transform: scale(0.9);
+}
+
+.media-link {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.media-link:hover {
+    color: var(--info-color);
+    transform: scale(1.2) rotate(5deg);
+}
+
+.media-description {
+    flex: 1;
+    min-width: 300px;
+}
+
+.media-description h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.media-description p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.media-features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.media-feature {
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.media-feature:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.media-feature-icon {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: var(--secondary-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.media-feature-text h4 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--dark-color);
+}
+
+.media-feature-text p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    color: var(--muted-color);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .media-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .media-circle {
+        margin-bottom: 20px;
+    }
+    
+    .media-description {
+        text-align: center;
+    }
+    
+    .media-feature {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .media-feature-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+</style>
+
+<!-- References Section -->
+<section id="references" class="fade-in">
+    <h2>References</h2>
+    <p class="references-intro">The following individuals can be contacted to verify my qualifications, experience, and character. Please feel free to reach out to them for more information about my academic and professional background.</p>
+    
+    <div class="references-grid">
+        <!-- Reference 1 -->
+        <div class="reference-card">
+            <div class="reference-header">
+                <div class="reference-avatar">
+                    <img src="/api/placeholder/150/150" alt="Dr. Jane Smith" class="reference-image">
+                </div>
+                <div class="reference-info">
+                    <h3 class="reference-name">Dr. Jane Smith</h3>
+                    <p class="reference-title">Professor of Computer Science</p>
+                    <p class="reference-institution">University Name</p>
+                </div>
+            </div>
+            <div class="reference-relation">
+                <i class="fas fa-chalkboard-teacher reference-icon"></i>
+                <span>Academic Advisor & Research Mentor</span>
+            </div>
+            <div class="reference-contact">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:janesmith@university.edu">janesmith@university.edu</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+11234567890">+1 (123) 456-7890</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Reference 2 -->
+        <div class="reference-card">
+            <div class="reference-header">
+                <div class="reference-avatar">
+                    <img src="/api/placeholder/150/150" alt="Dr. Michael Johnson" class="reference-image">
+                </div>
+                <div class="reference-info">
+                    <h3 class="reference-name">Dr. Michael Johnson</h3>
+                    <p class="reference-title">Head of Research</p>
+                    <p class="reference-institution">Tech Company Name</p>
+                </div>
+            </div>
+            <div class="reference-relation">
+                <i class="fas fa-briefcase reference-icon"></i>
+                <span>Professional Supervisor</span>
+            </div>
+            <div class="reference-contact">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:mjohnson@techcompany.com">mjohnson@techcompany.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+19876543210">+1 (987) 654-3210</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Reference 3 -->
+        <div class="reference-card">
+            <div class="reference-header">
+                <div class="reference-avatar">
+                    <img src="/api/placeholder/150/150" alt="Prof. Sarah Williams" class="reference-image">
+                </div>
+                <div class="reference-info">
+                    <h3 class="reference-name">Prof. Sarah Williams</h3>
+                    <p class="reference-title">Associate Professor</p>
+                    <p class="reference-institution">Department of Cybersecurity</p>
+                </div>
+            </div>
+            <div class="reference-relation">
+                <i class="fas fa-project-diagram reference-icon"></i>
+                <span>Collaboration Partner & Project Mentor</span>
+            </div>
+            <div class="reference-contact">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:swilliams@university.edu">swilliams@university.edu</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+14561237890">+1 (456) 123-7890</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Reference 4 -->
+        <div class="reference-card">
+            <div class="reference-header">
+                <div class="reference-avatar">
+                    <img src="/api/placeholder/150/150" alt="Dr. Robert Chen" class="reference-image">
+                </div>
+                <div class="reference-info">
+                    <h3 class="reference-name">Dr. Robert Chen</h3>
+                    <p class="reference-title">Director of AI Research</p>
+                    <p class="reference-institution">Research Institute Name</p>
+                </div>
+            </div>
+            <div class="reference-relation">
+                <i class="fas fa-flask reference-icon"></i>
+                <span>Research Collaborator</span>
+            </div>
+            <div class="reference-contact">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:rchen@research.org">rchen@research.org</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+17893214560">+1 (789) 321-4560</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="references-note">
+        <div class="note-icon">
+            <i class="fas fa-info-circle"></i>
+        </div>
+        <div class="note-text">
+            <p>Please contact me before reaching out to my references. Additional references are available upon request.</p>
+        </div>
+    </div>
+</section>
+
+<style>
+/* References Section Styling */
+.references-intro {
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 900px;
+    color: var(--muted-color);
+    font-size: 1.05rem;
+}
+
+.references-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.reference-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    padding: 25px;
+}
+
+.reference-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--secondary-color);
+}
+
+.reference-header {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.reference-avatar {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.reference-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--secondary-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.reference-card:hover .reference-image {
+    transform: scale(1.05);
+}
+
+.reference-info {
+    flex: 1;
+}
+
+.reference-name {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.reference-title {
+    font-weight: 500;
+    color: var(--dark-color);
+    margin-bottom: 2px;
+    font-size: 0.95rem;
+}
+
+.reference-institution {
+    font-style: italic;
+    color: var(--muted-color);
+    font-size: 0.9rem;
+}
+
+.reference-relation {
+    background-color: var(--light-color);
+    padding: 10px 15px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.reference-icon {
+    color: var(--secondary-color);
+}
+
+.reference-contact {
+    margin-top: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.contact-item i {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    width: 20px;
+}
+
+.contact-item a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.contact-item a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.references-note {
+    background-color: rgba(13, 110, 253, 0.05);
+    border-left: 4px solid var(--secondary-color);
+    padding: 15px 20px;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.note-icon {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+
+.note-text p {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .reference-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .reference-info {
+        text-align: center;
+    }
+    
+    .reference-relation {
+        justify-content: center;
+    }
+    
+    .contact-item {
+        justify-content: center;
+    }
+}
+</style>
+
+
+</main>
