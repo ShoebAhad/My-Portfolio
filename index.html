@@ -1008,6 +1008,93 @@
                 padding: 20px 15px;
             }
         }
+
+        /* Publications Section Custom Image Sizing - Uniform Main Images, Responsive */
+        .publication-images {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+        .publication-images .main-image {
+            width: 100%;
+            max-width: 700px;
+            aspect-ratio: 16/9;
+            background: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .publication-images .main-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+        }
+        .publication-images .additional-images {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .publication-images .thumb-image {
+            max-width: 120px;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: box-shadow 0.2s, transform 0.2s;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+        }
+        .publication-images .thumb-image:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            .publication-images .main-image {
+                max-width: 100%;
+                aspect-ratio: 16/9;
+                border-radius: 8px;
+            }
+            .publication-images .main-image img {
+                border-radius: 8px;
+            }
+            .publication-images .thumb-image {
+                max-width: 80px;
+                border-radius: 5px;
+            }
+        }
+        @media (max-width: 480px) {
+            .publication-images .main-image {
+                max-width: 100%;
+                aspect-ratio: 16/9;
+                border-radius: 6px;
+            }
+            .publication-images .main-image img {
+                border-radius: 6px;
+            }
+            .publication-images .thumb-image {
+                max-width: 60px;
+                border-radius: 4px;
+            }
+        }
+
+        /* Publication Description Box Styling */
+        .publication-description-box {
+            background: #f8f9fa;
+            border-left: 4px solid var(--secondary-color);
+            border-radius: 8px;
+            padding: 20px 18px;
+            margin-top: 22px;
+            font-size: 1.05rem;
+            color: var(--text-color);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
     </style>
 </head>
 <body>
@@ -1018,15 +1105,15 @@
                 <img src="images/My_photo.jpg" alt="Ahad Bin Islam Shoeb" class="profile-image">
                 <div class="header-text">
                     <h1>Ahad Bin Islam Shoeb</h1>
-                    <h2>Youth Leader • Policy Advocate • Social Entrepreneur</h2>
+                    <h2>Youth Leader • Policy Advocate • Social Entrepreneur . AI Engineer and Data Scientist</h2>
                     <p class="header-subtext">Empowering Communities Through Leadership & Innovation</p>
-                    <div class="social-links">
+                    <!-- <div class="social-links">
                         <a href="https://www.linkedin.com/in/ahad-bin-islam-shoeb-a810611a2/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/ShoebAhad" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
                         <a href="#" target="_blank" aria-label="Google Scholar Profile"><i class="fas fa-graduation-cap"></i></a>
                         <a href="mailto:ahadbinislam1111@gmail.com" target="_blank" aria-label="Email Contact"><i class="fas fa-envelope"></i></a>
                         <a href="#" target="_blank" aria-label="ResearchGate Profile"><i class="fab fa-researchgate"></i></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -1042,6 +1129,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#leadership">Leadership</a></li>
+                <li><a href="#publications">Publications</a></li>
                 <li><a href="#awards">Awards</a></li>
                 <li><a href="#purpose">Purpose Statement</a></li>
                 <li><a href="#references">References</a></li>
@@ -1086,7 +1174,7 @@
             <div class="leadership-item">
                 <div class="leadership-header">
                     <div>
-                        <h3 class="leadership-title">Chief Organizer</h3>
+                        <h3 class="leadership-title"> Organizer</h3>
                         <div class="leadership-organization">1st SN Bose Science Olympiad-2025 by Biggan Adda</div>
                     </div>
                     <span class="leadership-period">2025</span>
@@ -1116,7 +1204,7 @@
                         <h3 class="leadership-title">Founder & CEO</h3>
                         <div class="leadership-organization">IT For All and Academic Affiliation</div>
                     </div>
-                    <span class="leadership-period">2020 - Present</span>
+                    <span class="leadership-period">2022 - Present</span>
                 </div>
                 <div class="leadership-description">
                     <p>Founded two complementary educational platforms focused on providing quality and inclusive education to underserved communities. These initiatives have revolutionized access to technology education and academic support across Bangladesh, UK, and Australia.</p>
@@ -1279,7 +1367,191 @@
                     <div class="image-caption">Supreme Court of Bangladesh - Digital Transformation Initiative</div>
                 </div>
             </div>
+
+            <!-- National Conferences Subsection -->
+            <div class="leadership-item">
+                <div class="leadership-header">
+                    <div>
+                        <h3 class="leadership-title">Panelist & Policy Maker</h3>
+                        <div class="leadership-organization">National Conference on Education Policy, University of Dhaka</div>
+                    </div>
+                    <span class="leadership-period">2024</span>
+                </div>
+                <div class="leadership-description">
+                    <p>Joined as a policy maker in a high-level education policy conference at the University of Dhaka, collaborating with Deans and the Pro-Vice Chancellor to discuss and shape future education strategies for Bangladesh. Contributed youth perspectives and innovative policy recommendations to the national agenda.</p>
+                </div>
+                <!-- <div class="leadership-image">
+                    <img src="images/edu_policy_conference.jpg" alt="Education Policy Conference Photo" style="max-width: 400px; width: 100%; height: auto;">
+                    <div class="image-caption">Education Policy Conference, University of Dhaka (Attach your photo here)</div>
+                </div> -->
+            </div>
+            <div class="leadership-item">
+                <div class="leadership-header">
+                    <div>
+                        <h3 class="leadership-title">Conference Organizer & Speaker</h3>
+                        <div class="leadership-organization">Technology for Arts Students, Mohsin Hall, University of Dhaka</div>
+                    </div>
+                    <span class="leadership-period">2024</span>
+                </div>
+                <div class="leadership-description">
+                    <p>Organized and led a national conference at Mohsin Hall, University of Dhaka, introducing technology concepts to arts students. The event fostered interdisciplinary learning and inspired hundreds of students to explore digital skills and innovation.</p>
+                </div>
+            
+            </div>
+            <div class="leadership-item">
+                <div class="leadership-header">
+                    <div>
+                        <h3 class="leadership-title">Keynote Speaker</h3>
+                        <div class="leadership-organization">YSSE National Live Session</div>
+                    </div>
+                    <span class="leadership-period">2024</span>
+                </div>
+                <div class="leadership-description">
+                    <p>Delivered a keynote session to a live audience of over 300,000 community members through YSSE, sharing insights on youth leadership, entrepreneurship, and social impact. The session reached a nationwide audience and inspired young changemakers across Bangladesh.</p>
+                </div>
+                
+            </div>
         </section>
+
+     <!-- Publications Section -->
+<section id="publications">
+    <h2>Publications</h2>
+    <div class="publications-list">
+        <!-- Paper 1 -->
+        <div class="publication-item">
+            <div class="publication-images">
+                <div class="main-image">
+                    <img src="images/Validation Loss IEEE Globecom 2025.png" alt="Paper 1 Title">
+                </div>
+              
+            </div>
+            <div class="publication-info">
+                <h3>DECPA-FL: Dynamic Ensemble Clustering for
+Poison-Aware Federated Learning under Adversarial
+Conditions</h3>
+                <p class="publication-description">Ahad Bin Islam Shoeb∗, Kamrul Hasan†, Liang Hong†, Tariqul Islam‡,
+Imtiaz Ahmed§, Zoheb Hasan¶, Sumit Chakravarty∥
+∗Dhaka University, Dhaka, Bangladesh
+†Tennessee State University, Nashville, TN, USA
+‡Syracuse University, Syracuse, NY, USA
+§Howard University, Washington, DC, USA
+¶Laval University, Quebec City, QC, Canada
+∥Kennesaw State University, Marietta, GA, USA</p>
+                <div class="publication-meta">
+                    <span class="journal">IEEE GlobeCom</span>
+                    <span class="year">2025</span>
+                    <!-- <span class="authors">Co-authors</span> -->
+                </div>
+                <div class="publication-actions">
+                    <a href="images/IEEE Globecom 2025 Shoeb (1).pdf" class="download-btn" download="Paper1_Title.pdf">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+            
+                  
+                </div>
+            </div>
+          <!-- For Paper 1 - DECPA-FL -->
+<div class="publication-description-box">
+    <p>This research addresses a critical challenge in federated learning: defending against poisoning attacks while maintaining system performance. Traditional federated learning systems are vulnerable to malicious participants who can compromise the global model through data or model poisoning. Our proposed DECPA-FL framework introduces a novel dynamic ensemble clustering approach that intelligently identifies and isolates adversarial participants without compromising the collaborative learning process.
+
+    The methodology combines advanced clustering techniques with ensemble learning to create a robust defense mechanism. We developed dynamic clustering algorithms that adapt to changing attack patterns and participant behaviors in real-time. The system maintains multiple model clusters and uses ensemble voting to determine the most reliable global model updates, effectively filtering out poisoned contributions.
+
+    Our experimental results demonstrate significant improvements in both attack detection accuracy and model performance retention compared to existing defense mechanisms. The framework successfully maintained over 90% of clean model accuracy even under sophisticated poisoning attacks, while traditional approaches showed substantial degradation.
+
+    This work represents a major step forward in securing federated learning systems for real-world deployment. The research has practical implications for healthcare, finance, and IoT applications where data privacy and model integrity are paramount. Working on this project deepened my understanding of adversarial machine learning and reinforced my commitment to developing trustworthy AI systems. The collaborative nature of this international research, spanning institutions across multiple countries, provided invaluable experience in global academic cooperation and cross-cultural research methodologies.</p>
+</div>
+        </div>
+        
+        <!-- Paper 2 -->
+        <div class="publication-item">
+            <div class="publication-images">
+                <div class="main-image">
+                    <img src="images/STPS_net_device.png" alt="Paper 2 Title">
+                </div>
+             
+            </div>
+            <div class="publication-info">
+                <h3>STPS-NET: A Federated
+Spatio-Temporal Plant Specific
+Network for Yield Prediction and
+Recommendation in Urban
+Agriculture</h3>
+                <p class="publication-description">Here we researched about the Soil prediction of Rooftop Garden in Dhaka City. Afser Adil Olin worked with me under the supervision of Dr. Mamun or Rashid Sir</p>
+                <div class="publication-meta">
+                    <span class="conference">Undergrad Thesis</span>
+                    <span class="year">2024</span>
+                    <!-- <span class="authors">Co-authors</span> -->
+                </div>
+                <div class="publication-actions">
+                    <a href="images/STPS NET Declaration Form.pdf" class="download-btn" download="Paper2_Title.pdf">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                    <!-- <a href="images/STPS NET Declaration Form.pdf" class="view-btn" target="_blank">
+                        <i class="fas fa-eye"></i> View Online
+                    </a> -->
+                    <!-- <a href="#" class="cite-btn" onclick="copyBibTeX('paper2')">
+                        <i class="fas fa-quote-right"></i> Cite
+                    </a> -->
+                </div>
+            </div>
+            <div class="publication-description-box">
+    <p>This research addresses a critical challenge in federated learning: defending against poisoning attacks while maintaining system performance. Traditional federated learning systems are vulnerable to malicious participants who can compromise the global model through data or model poisoning. Our proposed DECPA-FL framework introduces a novel dynamic ensemble clustering approach that intelligently identifies and isolates adversarial participants without compromising the collaborative learning process.
+
+    The methodology combines advanced clustering techniques with ensemble learning to create a robust defense mechanism. We developed dynamic clustering algorithms that adapt to changing attack patterns and participant behaviors in real-time. The system maintains multiple model clusters and uses ensemble voting to determine the most reliable global model updates, effectively filtering out poisoned contributions.
+
+    Our experimental results demonstrate significant improvements in both attack detection accuracy and model performance retention compared to existing defense mechanisms. The framework successfully maintained over 90% of clean model accuracy even under sophisticated poisoning attacks, while traditional approaches showed substantial degradation.
+
+    This work represents a major step forward in securing federated learning systems for real-world deployment. The research has practical implications for healthcare, finance, and IoT applications where data privacy and model integrity are paramount. Working on this project deepened my understanding of adversarial machine learning and reinforced my commitment to developing trustworthy AI systems. The collaborative nature of this international research, spanning institutions across multiple countries, provided invaluable experience in global academic cooperation and cross-cultural research methodologies.</p>
+</div>
+        </div>
+        
+        <!-- Book -->
+        <div class="publication-item">
+            <div class="publication-images">
+                <div class="main-image">
+                    <img src="images/WhatsApp Image (2).jpeg" alt="">
+                </div>
+                <!-- <div class="additional-images">
+                    <img src="images/book1_cover_back.jpg" alt="Book Back Cover" class="thumb-image">
+                    <img src="images/book1_chapter1.jpg" alt="Book Chapter 1" class="thumb-image">
+                    <img src="images/book1_reviews.jpg" alt="Book Reviews" class="thumb-image">
+                </div> -->
+            </div>
+            <div class="publication-info">
+                <h3>UNHCR Report-Bangla</h3>
+                <p class="publication-description">This books was written by me based on the Report of UNHCR on July Uprising-2024</p>
+                <div class="publication-meta">
+                    <span class="publisher">Students against Discrimination</span>
+                    <span class="year">2025</span>
+                    
+                </div>
+                <div class="publication-actions">
+                    <a href="images/OHCHR Translation in Bengali.pdf" class="download-btn" download="Book_Title.pdf">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                   
+                    <!-- <a href="#" class="cite-btn" onclick="copyBibTeX('book1')">
+                        <i class="fas fa-quote-right"></i> Cite
+                    </a>
+                    <a href="#" class="buy-btn">
+                        <i class="fas fa-shopping-cart"></i> Buy Book
+                    </a> -->
+                </div>
+            </div>
+           <div class="publication-description-box">
+    <p>The July Uprising of 2024 marked a pivotal moment in Bangladesh's history, representing a significant student-led movement for democratic reform and social justice. Recognizing the importance of making international human rights documentation accessible to Bengali-speaking communities, I undertook the translation of the official UNHCR report documenting these historic events.
+
+    This translation project was motivated by the critical need to bridge language barriers in human rights reporting. Many Bangladeshi citizens, particularly those directly affected by the uprising, could not access the original English report despite its relevance to their experiences and rights. The translation serves as a vital resource for local communities, civil society organizations, and legal advocates working on accountability and justice initiatives.
+
+    The translation process required careful attention to legal terminology, cultural context, and sensitive content related to human rights violations. I worked closely with human rights experts and Bengali language scholars to ensure accuracy while maintaining the report's authoritative tone and legal precision. Special consideration was given to translating complex legal concepts and international human rights standards into accessible Bengali.
+
+    Published in collaboration with Students against Discrimination, this work has been widely distributed among student organizations, civil society groups, and affected communities. The Bengali version has facilitated broader public understanding of international human rights perspectives on the uprising and strengthened advocacy efforts for accountability.
+
+    This project reinforced my commitment to using my skills for social justice and human rights advocacy. The experience of translating such significant historical documentation highlighted the power of language accessibility in democratic participation. It also deepened my understanding of the intersection between technology, language, and social movements, inspiring my continued involvement in projects that serve marginalized communities and promote transparency in governance.</p>
+</div>
+        </div>
+    </div>
+</section>
 
         <!-- Awards Section -->
         <section id="awards">
@@ -1290,7 +1562,7 @@
                         <i class="fas fa-globe"></i>
                     </div>
                     <div class="award-content">
-                        <h3>Full Scholarship Recipient</h3>
+                        <h3>Scholarship Recipient</h3>
                         <p>Selected for full scholarship to attend the prestigious Dubai World Youth Leadership Conference, recognizing exceptional leadership potential and social impact.</p>
                         <span class="award-date">2025</span>
                         <span class="award-issuer">Dubai World Youth Leadership Conference</span>
@@ -1301,34 +1573,26 @@
                         <i class="fas fa-trophy"></i>
                     </div>
                     <div class="award-content">
+                        <h3>Honorable Mention</h3>
+                        <p>2020 DUCSU Math Olympiad</p>
+                        <span class="award-date">2020</span>
+                        <span class="award-issuer">University of Dhaka</span>
+                    </div>
+                    </li>
+                   
+                    <li class="award-item">
+                      <div class="award-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="award-content">
                         <h3>Outstanding Youth Leader Award</h3>
                         <p>Recognized for exceptional contributions to student rights advocacy and democratic movement leadership.</p>
-                        <span class="award-date">2024</span>
-                        <span class="award-issuer">Bangladesh Student Leadership Council</span>
+                        <span class="award-date">2025</span>
+                        <span class="award-issuer">Youth Leadership Forum, Nepal</span>
                     </div>
                 </li>
-                <li class="award-item">
-                    <div class="award-icon">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <div class="award-content">
-                        <h3>Social Impact Entrepreneur Award</h3>
-                        <p>Honored for founding educational platforms that have positively impacted thousands of students across multiple countries.</p>
-                        <span class="award-date">2023</span>
-                        <span class="award-issuer">International Social Innovation Foundation</span>
-                    </div>
-                </li>
-                <li class="award-item">
-                    <div class="award-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="award-content">
-                        <h3>Environmental Conservation Champion</h3>
-                        <p>Recognized for outstanding contributions to environmental conservation and sustainable development initiatives.</p>
-                        <span class="award-date">2024</span>
-                        <span class="award-issuer">Ministry of Environment, Bangladesh</span>
-                    </div>
-                </li>
+               
+              
             </ul>
         </section>
 
@@ -1382,10 +1646,10 @@
                             <i class="fas fa-envelope"></i>
                             <a href="mailto:mhasan1@tnstate.edu">mhasan1@tnstate.edu</a>
                         </div>
-                        <div class="contact-item">
+                        <!-- <div class="contact-item">
                             <i class="fas fa-phone-alt"></i>
                             <a href="tel:+19876543210">+1 (987) 654-3210</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 
@@ -1410,10 +1674,10 @@
                             <i class="fas fa-envelope"></i>
                             <a href="mailto:upoma@du.ac.bd">upoma@du.ac.bd</a>
                         </div>
-                        <div class="contact-item">
+                        <!-- <div class="contact-item">
                             <i class="fas fa-phone-alt"></i>
                             <a href="tel:+14561237890">+1 (456) 123-7890</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 
@@ -1438,10 +1702,10 @@
                             <i class="fas fa-envelope"></i>
                             <a href="mailto:mamun@du.ac.bd">mamun@du.ac.bd</a>
                         </div>
-                        <div class="contact-item">
+                        <!-- <div class="contact-item">
                             <i class="fas fa-phone-alt"></i>
                             <a href="tel:+17893214560">+1 (789) 321-4560</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -1474,8 +1738,8 @@
                         <i class="fas fa-phone"></i>
                     </div>
                     <div class="contact-details">
-                        <p class="contact-label">Phone</p>
-                        <p>+880 123 456 7890</p>
+                        <p class="contact-label">Phone and Whatsapp</p>
+                        <p>+880 1798343401</p>
                     </div>
                 </div>
                 <div class="contact-item">
@@ -1718,6 +1982,16 @@
             
             createBackToTopButton();
         });
+
+        // Image gallery functionality
+document.querySelectorAll('.thumb-image').forEach(img => {
+    img.addEventListener('click', function() {
+        const mainImage = this.closest('.publication-images').querySelector('.main-image img');
+        const tempSrc = mainImage.src;
+        mainImage.src = this.src;
+        this.src = tempSrc;
+    });
+});
     </script>
 </body>
 </html>
