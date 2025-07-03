@@ -3,30 +3,1028 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Portfolio - Ahad Bin Islam Shoeb | ML / Data Science / Cybersecurity</title>
-    <meta name="description" content="Academic portfolio for Masters/PhD application in Machine Learning, Data Science, and Cybersecurity, showcasing research experience, technical skills, and leadership roles.">
+    <title>Leadership Portfolio - Ahad Bin Islam Shoeb | Youth Leader • Policy Advocate • Social Entrepreneur</title>
+    <meta name="description" content="Leadership portfolio showcasing youth leadership, policy advocacy, educational entrepreneurship, and social impact initiatives across Bangladesh and internationally.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --primary-color: #1a3a5f;
+            --secondary-color: #0d6efd;
+            --accent-color: #dc3545;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+            --text-color: #212529;
+            --bg-color: #fff;
+            --muted-color: #6c757d;
+            --border-color: #dee2e6;
+            --success-color: #198754;
+            --info-color: #0dcaf0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #0d4377 100%);
+            color: white;
+            padding: 40px 0;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--secondary-color);
+            margin-bottom: 25px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .header-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-text h2 {
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+            color: rgba(255, 255, 255, 0.85);
+            letter-spacing: 0.5px;
+        }
+
+        .header-subtext {
+            font-size: 1.05rem;
+            color: var(--info-color);
+            margin-bottom: 18px;
+            letter-spacing: 0.5px;
+            font-weight: 300;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 18px;
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.4rem;
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+            background-color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--dark-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 18px 20px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            display: block;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            position: relative;
+        }
+
+        nav a:hover {
+            background-color: var(--primary-color);
+            color: var(--info-color);
+        }
+
+        nav a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--info-color);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover:after {
+            width: 100%;
+        }
+
+        /* Main Content */
+        main {
+            padding: 60px 0;
+            background-color: #f9fafb;
+        }
+
+        section {
+            margin-bottom: 60px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid var(--border-color);
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--secondary-color);
+            font-size: 1.8rem;
+            font-weight: 600;
+            position: relative;
+            letter-spacing: 0.5px;
+        }
+
+        section h2:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            background-color: var(--info-color);
+            bottom: -2px;
+            left: 0;
+        }
+
+        /* Leadership Experience Items */
+        .leadership-item {
+            margin-bottom: 40px;
+            padding: 25px;
+            background-color: var(--light-color);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .leadership-item:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+            border-left-color: var(--accent-color);
+        }
+
+        .leadership-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .leadership-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .leadership-title {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .leadership-period {
+            color: var(--secondary-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 5px 12px;
+            background-color: rgba(13, 110, 253, 0.1);
+            border-radius: 20px;
+        }
+
+        .leadership-organization {
+            color: var(--dark-color);
+            font-size: 1.05rem;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .leadership-description {
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .leadership-impact {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 3px solid var(--success-color);
+        }
+
+        .leadership-impact h4 {
+            color: var(--success-color);
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        .leadership-image {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .leadership-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .leadership-image:hover img {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .image-caption {
+            font-style: italic;
+            color: var(--muted-color);
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        /* Education Section */
+        .education-item {
+            margin-bottom: 35px;
+            padding-left: 20px;
+            border-left: 3px solid var(--border-color);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .education-item:hover {
+            border-left-color: var(--secondary-color);
+            padding-left: 25px;
+        }
+
+        .education-item:before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: var(--secondary-color);
+            left: -9px;
+            top: 6px;
+        }
+
+        .education-year {
+            font-weight: 600;
+            color: var(--secondary-color);
+            font-size: 0.95rem;
+            display: inline-block;
+            padding: 3px 10px;
+            background-color: rgba(13, 110, 253, 0.1);
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+
+        .education-degree {
+            font-weight: 700;
+            margin: 8px 0;
+            font-size: 1.2rem;
+            color: var(--dark-color);
+        }
+
+        .education-institution {
+            font-style: italic;
+            color: var(--muted-color);
+            font-size: 1.05rem;
+        }
+
+        .education-details {
+            margin-top: 12px;
+            padding: 10px;
+            background-color: var(--light-color);
+            border-radius: 6px;
+            font-size: 0.95rem;
+        }
+
+        /* Awards Section */
+        .awards-list {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .award-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .award-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-color: var(--secondary-color);
+        }
+
+        .award-icon {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+            margin-right: 15px;
+            margin-top: 3px;
+            background-color: rgba(220, 53, 69, 0.1);
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .award-content h3 {
+            margin-bottom: 8px;
+            color: var(--dark-color);
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .award-content p {
+            color: var(--text-color);
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .award-date {
+            color: var(--secondary-color);
+            font-size: 0.85rem;
+            display: inline-block;
+            padding: 3px 10px;
+            background-color: rgba(13, 110, 253, 0.1);
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .award-issuer {
+            display: block;
+            font-style: italic;
+            color: var(--muted-color);
+            margin-top: 8px;
+            font-size: 0.9rem;
+        }
+
+        /* Purpose Statement */
+        .purpose-content {
+            background-color: #f8f9fa;
+            padding: 35px;
+            border-radius: 12px;
+            position: relative;
+            border-left: 5px solid var(--secondary-color);
+            box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .purpose-content:before {
+            content: '"';
+            font-size: 120px;
+            color: rgba(13, 110, 253, 0.05);
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-family: Georgia, serif;
+        }
+
+        .purpose-text {
+            padding-left: 10px;
+            position: relative;
+            z-index: 1;
+            line-height: 1.8;
+        }
+
+        .purpose-heading {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding-bottom: 15px;
+        }
+
+        .purpose-text p {
+            margin-bottom: 18px;
+            text-align: justify;
+        }
+
+        /* References Section */
+        .references-intro {
+            margin-bottom: 30px;
+            line-height: 1.6;
+            max-width: 900px;
+            color: var(--muted-color);
+            font-size: 1.05rem;
+        }
+
+        .references-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .reference-card {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            padding: 25px;
+        }
+
+        .reference-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+            border-color: var(--secondary-color);
+        }
+
+        .reference-header {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
+        .reference-avatar {
+            width: 80px;
+            height: 80px;
+            flex-shrink: 0;
+        }
+
+        .reference-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--secondary-color);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .reference-card:hover .reference-image {
+            transform: scale(1.05);
+        }
+
+        .reference-info {
+            flex: 1;
+        }
+
+        .reference-name {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .reference-title {
+            font-weight: 500;
+            color: var(--dark-color);
+            margin-bottom: 2px;
+            font-size: 0.95rem;
+        }
+
+        .reference-institution {
+            font-style: italic;
+            color: var(--muted-color);
+            font-size: 0.9rem;
+        }
+
+        .reference-relation {
+            background-color: var(--light-color);
+            padding: 10px 15px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .reference-icon {
+            color: var(--secondary-color);
+        }
+
+        .reference-contact {
+            margin-top: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .contact-item i {
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            width: 20px;
+        }
+
+        .contact-item a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .contact-item a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+
+        .references-note {
+            background-color: rgba(13, 110, 253, 0.05);
+            border-left: 4px solid var(--secondary-color);
+            padding: 15px 20px;
+            border-radius: 0 8px 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .note-icon {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+        }
+
+        .note-text p {
+            margin: 0;
+            color: var(--text-color);
+            font-size: 0.95rem;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .contact-item {
+            flex: 1;
+            min-width: 250px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-icon {
+            background-color: var(--secondary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 1.2rem;
+        }
+
+        .contact-details p {
+            margin: 0;
+        }
+
+        .contact-label {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .footer-text {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 10px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 101;
+        }
+
+        /* Hide navigation by default on mobile */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--dark-color);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            nav li {
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            nav li:last-child {
+                border-bottom: none;
+            }
+
+            nav a {
+                padding: 15px 20px;
+                display: block;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            header {
+                padding: 30px 0;
+                position: relative;
+            }
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 50px;
+            }
+
+            .profile-image {
+                width: 140px;
+                height: 140px;
+                margin-bottom: 20px;
+            }
+
+            .header-text h1 {
+                font-size: 1.8rem;
+                margin-bottom: 10px;
+            }
+
+            .header-text h2 {
+                font-size: 1rem;
+                margin-bottom: 8px;
+            }
+
+            .header-subtext {
+                font-size: 0.95rem;
+                margin-bottom: 15px;
+            }
+
+            .social-links {
+                gap: 12px;
+            }
+
+            .social-links a {
+                width: 35px;
+                height: 35px;
+                font-size: 1.2rem;
+            }
+
+            main {
+                padding: 40px 0;
+            }
+
+            section {
+                margin-bottom: 40px;
+                padding: 20px;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+
+            .leadership-item {
+                margin-bottom: 30px;
+                padding: 20px;
+            }
+
+            .leadership-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .leadership-title {
+                font-size: 1.1rem;
+                margin-bottom: 5px;
+            }
+
+            .leadership-organization {
+                font-size: 0.95rem;
+                margin-bottom: 10px;
+            }
+
+            .leadership-period {
+                align-self: flex-start;
+                font-size: 0.85rem;
+                padding: 4px 10px;
+            }
+
+            .leadership-impact {
+                padding: 12px;
+            }
+
+            .leadership-impact h4 {
+                font-size: 0.9rem;
+            }
+
+            .leadership-impact ul {
+                padding-left: 15px;
+            }
+
+            .leadership-impact li {
+                font-size: 0.9rem;
+                margin-bottom: 5px;
+            }
+
+            .reference-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 10px;
+            }
+
+            .reference-avatar {
+                width: 70px;
+                height: 70px;
+            }
+
+            .reference-info {
+                text-align: center;
+            }
+
+            .reference-name {
+                font-size: 1.1rem;
+            }
+
+            .reference-title {
+                font-size: 0.9rem;
+            }
+
+            .reference-institution {
+                font-size: 0.85rem;
+            }
+
+            .reference-relation {
+                justify-content: center;
+                padding: 8px 12px;
+                font-size: 0.9rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .contact-item {
+                justify-content: flex-start;
+                gap: 15px;
+            }
+
+            .contact-icon {
+                width: 35px;
+                height: 35px;
+                font-size: 1rem;
+            }
+
+            .awards-list {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .award-item {
+                padding: 15px;
+            }
+
+            .award-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1.5rem;
+                margin-right: 12px;
+            }
+
+            .award-content h3 {
+                font-size: 1rem;
+            }
+
+            .award-content p {
+                font-size: 0.9rem;
+            }
+
+            .purpose-content {
+                padding: 25px 20px;
+            }
+
+            .purpose-heading {
+                font-size: 1.2rem;
+            }
+
+            .purpose-text p {
+                font-size: 0.95rem;
+                text-align: left;
+            }
+
+            .education-item {
+                padding-left: 15px;
+                margin-bottom: 25px;
+            }
+
+            .education-degree {
+                font-size: 1.1rem;
+            }
+
+            .education-details {
+                padding: 8px;
+                font-size: 0.9rem;
+            }
+
+            .references-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .reference-card {
+                padding: 20px;
+            }
+
+            .references-intro {
+                font-size: 1rem;
+            }
+
+            .references-note {
+                padding: 12px 15px;
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+
+            .note-text p {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Extra small devices */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 10px;
+            }
+
+            .header-text h1 {
+                font-size: 1.6rem;
+            }
+
+            .header-text h2 {
+                font-size: 0.9rem;
+            }
+
+            .social-links a {
+                width: 32px;
+                height: 32px;
+                font-size: 1.1rem;
+            }
+
+            section {
+                padding: 15px;
+                margin-bottom: 30px;
+            }
+
+            section h2 {
+                font-size: 1.3rem;
+            }
+
+            .leadership-item {
+                padding: 15px;
+            }
+
+            .leadership-title {
+                font-size: 1rem;
+            }
+
+            .purpose-content {
+                padding: 20px 15px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <button class="menu-toggle" id="menuToggle">
-                <i class="fas fa-bars"></i>
-            </button>
             <div class="header-content">
-                <img src="images/My_photo.jpg" alt="Your Profile" class="profile-image" id="profileImage">
+                <img src="images/My_photo.jpg" alt="Ahad Bin Islam Shoeb" class="profile-image">
                 <div class="header-text">
                     <h1>Ahad Bin Islam Shoeb</h1>
-                    <h2>ML/AI Researcher • Data Scientist • Cybersecurity Specialist</h2>
-                    <p class="header-subtext">MSc/PhD Candidate in Machine Learning & Security</p>
+                    <h2>Youth Leader • Policy Advocate • Social Entrepreneur</h2>
+                    <p class="header-subtext">Empowering Communities Through Leadership & Innovation</p>
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/ahad-bin-islam-shoeb-a810611a2/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/ShoebAhad" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
                         <a href="#" target="_blank" aria-label="Google Scholar Profile"><i class="fas fa-graduation-cap"></i></a>
-                        <a href="ahadbinislam1111@gmail.com" target="_blank" aria-label="Email Contact"><i class="fas fa-envelope"></i></a>
+                        <a href="mailto:ahadbinislam1111@gmail.com" target="_blank" aria-label="Email Contact"><i class="fas fa-envelope"></i></a>
                         <a href="#" target="_blank" aria-label="ResearchGate Profile"><i class="fab fa-researchgate"></i></a>
                     </div>
                 </div>
@@ -37,17 +1035,16 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul id="navMenu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#extracurricular">Extracurricular</a></li>
+                <li><a href="#leadership">Leadership</a></li>
                 <li><a href="#awards">Awards</a></li>
                 <li><a href="#purpose">Purpose Statement</a></li>
-                <li><a href="#media">Media</a></li>
+                <li><a href="#references">References</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -56,550 +1053,258 @@
     <!-- Main Content -->
     <main class="container">
         <!-- About Section -->
-        <section id="about" class="fade-in">
+        <section id="about">
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I am a highly motivated and results-driven professional specializing in Machine Learning, Data Science, and Cybersecurity. With a strong academic background and practical experience in developing AI solutions and securing digital assets, I am seeking to advance my expertise through a Masters/PhD program.</p>
-                    <p>My research interests include Generative AI, Computer Vision, LLMs and Cyber Security, and I am passionate about [your passion]. Through my academic pursuits, I aim to contribute to the advancement of technology and make a meaningful impact in the field.</p>
-                    <p>Throughout my career, I have demonstrated strong analytical skills, problem-solving abilities, and a commitment to continuous learning. I am skilled in various programming languages, machine learning frameworks, and cybersecurity tools that enable me to tackle complex challenges effectively.</p>
+                    <p>I am a passionate youth leader and social entrepreneur dedicated to creating positive change through innovative leadership and community empowerment. With extensive experience in student activism, educational entrepreneurship, and policy advocacy, I have consistently worked to bridge gaps between communities and create opportunities for inclusive growth.</p>
+                    <p>My leadership journey spans across multiple domains - from organizing national science competitions to founding educational platforms that have trained over 5,000 students. I believe in the power of collective action and have been instrumental in various movements that have shaped policy and social change in Bangladesh.</p>
+                    <p>Through my work with various organizations and initiatives, I have developed strong skills in strategic planning, community organizing, policy advocacy, and cross-cultural communication. I am committed to using these skills to address global challenges and create sustainable solutions for the next generation.</p>
                 </div>
             </div>
         </section>
 
         <!-- Education Section -->
-        <section id="education" class="fade-in">
+        <section id="education">
             <h2>Education</h2>
             <div class="education-item">
                 <div class="education-year">2019 - 2024</div>
                 <div class="education-degree">Bachelor of Science in Computer Science and Engineering</div>
                 <div class="education-institution">University of Dhaka</div>
-                <div class="education-details">
+                <!-- <div class="education-details">
                     <p>GPA: 3.42/4.0</p>
-                    <p>Relevant Coursework: Machine Learning, Artificial Intelligence, Data Structures and Algorithms, Database Management Systems, Network Security, Cryptography, Linear Algebra, Data Science, Internet of Things</p>
-                </div>
-            </div>
-            <!-- <div class="education-item">
-                <div class="education-year">2016 - 2018</div>
-                <div class="education-degree">Associate Degree in Information Technology</div>
-                <div class="education-institution">College Name</div>
-                <div class="education-details">
-                    <p>GPA: 3.7/4.0</p>
-                    <p>Relevant Coursework: Programming Fundamentals, Computer Networks, Web Development, Information Security</p>
-                </div>
-            </div> -->
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="fade-in">
-            <h2>Professional Experience</h2>
-            <div class="experience-item">
-                <div class="experience-company">
-                    <span>Turing</span>
-                    <span class="experience-period">October 2024 - Present</span>
-                </div>
-                <div class="experience-title">Data Scientist</div>
-                <div class="experience-description">
-                    <ul>
-                        <li>Developed and implemented machine learning models to predict customer behavior, resulting in a 15% increase in customer retention.</li>
-                        <li>Collaborated with cross-functional teams to design and deploy data pipelines for efficient data processing and analysis.</li>
-                        <li>Created visualization dashboards to communicate insights to stakeholders, improving decision-making processes.</li>
-                        <li>Conducted A/B testing to optimize algorithms and enhance model performance by 20%.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="experience-item">
-                <div class="experience-company">
-                    <span>Digital Readiness and Intelligence</span>
-                    <span class="experience-period">May 2020 - Dec 2021</span>
-                </div>
-                <div class="experience-title">ML Research Intern</div>
-                <div class="experience-description">
-                    <ul>
-                        <li>Assisted in developing natural language processing models for sentiment analysis with 85% accuracy.</li>
-                        <li>Implemented data preprocessing techniques to handle large datasets efficiently.</li>
-                        <li>Conducted literature reviews and participated in weekly research meetings to discuss the latest advancements in ML.</li>
-                        <li>Contributed to a research paper published in [Conference/Journal Name].</li>
-                    </ul>
-                </div>
+                    <p>Relevant Coursework: Leadership Psychology, Public Policy, Strategic Management, Cross-Cultural Communication, Project Management, Data Analytics for Social Good</p>
+                </div> -->
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="fade-in">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skills-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skills-list">
-                        <div class="skill-item"><i class="fas fa-code skill-icon"></i> Python</div>
-                        <div class="skill-item"><i class="fas fa-code skill-icon"></i> R</div>
-                        <div class="skill-item"><i class="fas fa-code skill-icon"></i> Java</div>
-                        <div class="skill-item"><i class="fas fa-code skill-icon"></i> SQL</div>
-                        <div class="skill-item"><i class="fas fa-code skill-icon"></i> JavaScript</div>
+        <!-- Leadership Experience Section -->
+        <section id="leadership">
+            <h2>Leadership Experience</h2>
+            
+            <!-- Organizer - SN Bose Science Olympiad -->
+            <div class="leadership-item">
+                <div class="leadership-header">
+                    <div>
+                        <h3 class="leadership-title">Chief Organizer</h3>
+                        <div class="leadership-organization">1st SN Bose Science Olympiad-2025 by Biggan Adda</div>
+                    </div>
+                    <span class="leadership-period">2025</span>
+                </div>
+                <div class="leadership-description">
+                    <p>Led the organization of the inaugural SN Bose Science Olympiad, a national-level competition aimed at promoting scientific thinking and innovation among students across Bangladesh. This initiative honors the legacy of renowned physicist Satyendra Nath Bose and encourages young minds to pursue excellence in science and technology.</p>
+                    <div class="leadership-impact">
+                        <h4>Key Achievements:</h4>
+                        <ul>
+                            <li>Coordinated with 50+ educational institutions nationwide</li>
+                            <li>Managed a team of 30+ volunteers and coordinators</li>
+                            <li>Attracted 2,000+ participants from across Bangladesh</li>
+                            <li>Secured partnerships with leading scientific organizations</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="skills-category">
-                    <h3>ML/AI Frameworks</h3>
-                    <div class="skills-list">
-                        <div class="skill-item"><i class="fas fa-brain skill-icon"></i> TensorFlow</div>
-                        <div class="skill-item"><i class="fas fa-brain skill-icon"></i> PyTorch</div>
-                        <div class="skill-item"><i class="fas fa-brain skill-icon"></i> Scikit-learn</div>
-                        <div class="skill-item"><i class="fas fa-brain skill-icon"></i> Keras</div>
-                        <div class="skill-item"><i class="fas fa-brain skill-icon"></i> NLTK</div>
-                    </div>
-                </div>
-                <div class="skills-category">
-                    <h3>Data Analysis</h3>
-                    <div class="skills-list">
-                        <div class="skill-item"><i class="fas fa-chart-line skill-icon"></i> Pandas</div>
-                        <div class="skill-item"><i class="fas fa-chart-line skill-icon"></i> NumPy</div>
-                        <div class="skill-item"><i class="fas fa-chart-line skill-icon"></i> Matplotlib</div>
-                        <div class="skill-item"><i class="fas fa-chart-line skill-icon"></i> Tableau</div>
-                        <div class="skill-item"><i class="fas fa-chart-line skill-icon"></i> Power BI</div>
-                    </div>
-                </div>
-                <div class="skills-category">
-                    <h3>Cybersecurity</h3>
-                    <div class="skills-list">
-                        <div class="skill-item"><i class="fas fa-shield-alt skill-icon"></i> Network Security</div>
-                        <div class="skill-item"><i class="fas fa-shield-alt skill-icon"></i> Cryptography</div>
-                        <div class="skill-item"><i class="fas fa-shield-alt skill-icon"></i> Penetration Testing</div>
-                        <div class="skill-item"><i class="fas fa-shield-alt skill-icon"></i> Security Analysis</div>
-                        <div class="skill-item"><i class="fas fa-shield-alt skill-icon"></i> Vulnerability Assessment</div>
-                    </div>
+                <div class="leadership-image">
+                    <img src="images/WhatsApp Image Jul 3 2025.jpeg" alt="1st SN Bose Science Olympiad 2025 Event">
+                    <div class="image-caption">1st SN Bose Science Olympiad-2025 Banner</div>
                 </div>
             </div>
-        </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="fade-in">
-            <h2>Projects</h2>
-            
-            <!-- Project Filter (Optional) -->
-            <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="ml">Machine Learning</button>
-                <button class="filter-btn" data-filter="security">Cybersecurity</button>
-                <button class="filter-btn" data-filter="data">Data Science</button>
-            </div>
-            
-            <div class="projects-container">
-                <!-- Project 1 (Expanded Format) -->
-                <div class="project-expanded" data-categories="ml data">
-                    <div class="project-header">
-                        <h3 class="project-expanded-title">Sentiment Analysis System</h3>
-                        <span class="project-period">2022</span>
+            <!-- Founder - IT For All & Academic Affiliation -->
+            <div class="leadership-item">
+                <div class="leadership-header">
+                    <div>
+                        <h3 class="leadership-title">Founder & CEO</h3>
+                        <div class="leadership-organization">IT For All and Academic Affiliation</div>
                     </div>
-                    
-                    <div class="project-content">
-                        <div class="project-media">
-                            <img src="/api/placeholder/600/400" alt="Sentiment Analysis Dashboard" class="project-expanded-image">
-                            <div class="project-gallery">
-                                <img src="/api/placeholder/150/150" alt="Model Architecture" class="project-thumbnail" onclick="expandImage(this.src)">
-                                <img src="/api/placeholder/150/150" alt="Results Visualization" class="project-thumbnail" onclick="expandImage(this.src)">
-                                <img src="/api/placeholder/150/150" alt="System Diagram" class="project-thumbnail" onclick="expandImage(this.src)">
-                            </div>
-                        </div>
-                        
-                        <div class="project-details">
-                            <div class="project-description-expanded">
-                                <p>Developed an advanced natural language processing system to analyze customer reviews and feedback for e-commerce platforms. The system classifies text into positive, negative, or neutral sentiments with 90% accuracy.</p>
-                                
-                                <div class="project-section">
-                                    <h4>Challenge</h4>
-                                    <p>Traditional sentiment analysis methods struggled with context-specific language, sarcasm, and mixed sentiments in customer reviews. Our goal was to create a more nuanced system capable of understanding these complexities.</p>
-                                </div>
-                                
-                                <div class="project-section">
-                                    <h4>Approach</h4>
-                                    <p>Implemented a hybrid CNN-LSTM neural network architecture trained on a custom-labeled dataset of 50,000 reviews. Used pre-trained word embeddings (GloVe) and fine-tuned the model with domain-specific data.</p>
-                                </div>
-                                
-                                <div class="project-section">
-                                    <h4>Results</h4>
-                                    <div class="project-results">
-                                        <div class="result-metric">
-                                            <div class="result-value">90%</div>
-                                            <div class="result-label">Accuracy</div>
-                                        </div>
-                                        <div class="result-metric">
-                                            <div class="result-value">87%</div>
-                                            <div class="result-label">F1 Score</div>
-                                        </div>
-                                        <div class="result-metric">
-                                            <div class="result-value">92%</div>
-                                            <div class="result-label">Precision</div>
-                                        </div>
-                                        <div class="result-metric">
-                                            <div class="result-value">15ms</div>
-                                            <div class="result-label">Response Time</div>
-                                        </div>
-                                    </div>
-                                    <p>The system was deployed as an API and integrated with the client's customer service platform, resulting in a 25% reduction in response time to negative reviews and a 15% increase in customer satisfaction scores.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="project-footer">
-                                <div class="project-expanded-tags">
-                                    <span class="project-tag">NLP</span>
-                                    <span class="project-tag">Python</span>
-                                    <span class="project-tag">TensorFlow</span>
-                                    <span class="project-tag">Deep Learning</span>
-                                    <span class="project-tag">CNN-LSTM</span>
-                                </div>
-                                
-                                <div class="project-links">
-                                    <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
-                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                                    <a href="#" class="project-link"><i class="fas fa-file-pdf"></i> Case Study</a>
-                                </div>
-                            </div>
-                        </div>
+                    <span class="leadership-period">2020 - Present</span>
+                </div>
+                <div class="leadership-description">
+                    <p>Founded two complementary educational platforms focused on providing quality and inclusive education to underserved communities. These initiatives have revolutionized access to technology education and academic support across Bangladesh, UK, and Australia.</p>
+                    <div class="leadership-impact">
+                        <h4>Impact Created:</h4>
+                        <ul>
+                            <li>Trained 5,000+ students in technology and academic skills</li>
+                            <li>Specifically empowered 2,000+ women with digital literacy</li>
+                            <li>Established partnerships with universities in Bangladesh, UK, and Australia</li>
+                            <li>Developed curriculum for inclusive and accessible education</li>
+                            <li>Created scholarship programs for underprivileged students</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <!-- Project 2 (Expanded Format) -->
-                <div class="project-expanded" data-categories="security ml">
-                    <div class="project-header">
-                        <h3 class="project-expanded-title">Intrusion Detection System</h3>
-                        <span class="project-period">2021</span>
-                    </div>
-                    
-                    <div class="project-content">
-                        <div class="project-media">
-                            <img src="/api/placeholder/600/400" alt="Intrusion Detection Dashboard" class="project-expanded-image">
-                            <div class="project-gallery">
-                                <img src="/api/placeholder/150/150" alt="Network Diagram" class="project-thumbnail" onclick="expandImage(this.src)">
-                                <img src="/api/placeholder/150/150" alt="Alert System" class="project-thumbnail" onclick="expandImage(this.src)">
-                                <img src="/api/placeholder/150/150" alt="Performance Metrics" class="project-thumbnail" onclick="expandImage(this.src)">
-                            </div>
-                        </div>
-                        
-                        <div class="project-details">
-                            <div class="project-description-expanded">
-                                <p>Created a cybersecurity solution to detect and prevent network intrusions using machine learning algorithms. The system monitors network traffic in real-time and identifies potential security threats with minimal false positives.</p>
-                                
-                                <div class="project-section">
-                                    <h4>Challenge</h4>
-                                    <p>Traditional signature-based intrusion detection systems fail to identify novel attacks. Our goal was to develop a system that could detect previously unseen attack patterns while maintaining low false positive rates.</p>
-                                </div>
-                                
-                                <div class="project-section">
-                                    <h4>Approach</h4>
-                                    <p>Implemented an ensemble approach combining Random Forest, Gradient Boosting, and Isolation Forest algorithms. Trained the model on the NSL-KDD dataset and enhanced it with real-world network data collected from a controlled environment.</p>
-                                </div>
-                                
-                                <div class="project-section">
-                                    <h4>Results</h4>
-                                    <div class="project-results">
-                                        <div class="result-metric">
-                                            <div class="result-value">95%</div>
-                                            <div class="result-label">Detection Rate</div>
-                                        </div>
-                                        <div class="result-metric">
-                                            <div class="result-value">2.3%</div>
-                                            <div class="result-label">False Positives</div>
-                                        </div>
-                                        <div class="result-metric">
-                                            <div class="result-value">98%</div>
-                                            <div class="result-label">Known Attacks</div>
-                                        </div>
-                                        <div class="result-metric">
-                                            <div class="result-value">83%</div>
-                                            <div class="result-label">Zero-day Attacks</div>
-                                        </div>
-                                    </div>
-                                    <p>The system was deployed in a mid-sized enterprise environment, successfully detecting several attempted intrusions that were missed by traditional security tools. It reduced the security team's alert investigation time by 35%.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="project-footer">
-                                <div class="project-expanded-tags">
-                                    <span class="project-tag">Cybersecurity</span>
-                                    <span class="project-tag">Python</span>
-                                    <span class="project-tag">Random Forest</span>
-                                    <span class="project-tag">Anomaly Detection</span>
-                                    <span class="project-tag">Network Security</span>
-                                </div>
-                                
-                                <div class="project-links">
-                                    <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
-                                    <a href="#" class="project-link"><i class="fas fa-file-pdf"></i> Technical Paper</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="leadership-image">
+                    <img src="images/SCR-20250703-sfhs.jpeg" alt="IT For All Training Session">
+                     <img src="images/WhatsApp Image Jul 3 2025 (2).jpeg" alt="IT For All Training Session 2">
+                    <div class="image-caption">IT For All - Women's Digital Training Program</div>
                 </div>
-                
-                <!-- Project 3 (Expanded Format) -->
-                <div class="project-expanded" data-categories="data">
-                    <div class="project-header">
-                        <h3 class="project-expanded-title">Predictive Analytics Dashboard</h3>
-                        <span class="project-period">2020</span>
-                    </div>
-                    
-                    <div class="project-content">
-                        <div class="project-media">
-                            <img src="/api/placeholder/600/400" alt="Analytics Dashboard" class="project-expanded-image">
-                            <div class="project-gallery">
-                                <img src="/api/placeholder/150/150" alt="Sales Forecast Module" class="project-thumbnail" onclick="expandImage(this.src)">
-                                <img src="/api/placeholder/150/150" alt="Customer Segment Analysis" class="project-thumbnail" onclick="expandImage(this.src)">
-                                <img src="/api/placeholder/150/150" alt="Trend Visualization" class="project-thumbnail" onclick="expandImage(this.src)">
-                            </div>
-                        </div>
-                        
-                        <div class="project-details">
-                            <div class="project-description-expanded">
-                                <p>Built an interactive dashboard to visualize and predict business metrics for decision-making. The solution integrates multiple data sources and provides actionable insights through customizable visualizations and forecasting models.</p>
-                                
-                                <div class="project-section">
-                                    <h4>Challenge</h4>
-                                    <p>The client struggled with siloed data across departments and lacked a unified view of business performance. Decision-makers needed accessible, real-time insights and reliable forecasts to guide strategy.</p>
-                                </div>
-                                
-                                <div class="project-section">
-                                    <h4>Approach</h4>
-                                    <p>Designed an ETL pipeline to consolidate data from CRM, ERP, and marketing platforms. Developed a web-based dashboard using R Shiny with interactive visualizations and integrated ARIMA and Prophet forecasting models for key metrics.</p>
-                                </div>
-                                
-                                <div class="project-section">
-                                    <h4>Results</h4>
-                                    <div class="project-results">
-                                        <div class="result-metric">
-                                            <div class="result-value">94%</div>
-                                            <div class="result-label">Forecast Accuracy</div>
-                                        </div>
-                                        <div class="result-metric">
-                                            <div class="result-value">65%</div>
-                                            <div class="result-label">Faster Reporting</div>
-                                        </div>
-                                        <div class="result-metric">
-                                            <div class="result-value">12%</div>
-                                            <div class="result-label">Revenue Increase</div>
-                                        </div>
-                                        <div class="result-metric">
-                                            <div class="result-value">8</div>
-                                            <div class="result-label">Data Sources</div>
-                                        </div>
-                                    </div>
-                                    <p>The dashboard became a central decision-making tool for the executive team, enabling data-driven strategies that contributed to a 12% revenue increase within the first six months of implementation.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="project-footer">
-                                <div class="project-expanded-tags">
-                                    <span class="project-tag">Data Visualization</span>
-                                    <span class="project-tag">R</span>
-                                    <span class="project-tag">Tableau</span>
-                                    <span class="project-tag">Time Series</span>
-                                    <span class="project-tag">Business Intelligence</span>
-                                </div>
-                                
-                                <div class="project-links">
-                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
-                                    <a href="#" class="project-link"><i class="fas fa-images"></i> Screenshot Tour</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Add More Projects as Needed -->
             </div>
-            
-            <!-- Image Viewer Modal -->
-            <div id="imageModal" class="modal">
-                <span class="modal-close">&times;</span>
-                <img class="modal-content" id="expandedImage">
-                <div id="imageCaption"></div>
-            </div>
-        </section>
 
-        <!-- Publications Section -->
-        <section id="publications" class="fade-in">
-            <h2>Publications & Research</h2>
-            <ul class="publications-list">
-                <li class="publication-item">
-                    <div class="publication-title">"Novel Approach to optimize agriculture "</div>
-                    <div class="publication-authors">Your Name, Co-author Name, Co-author Name</div>
-                    <div class="publication-journal">Journal of Cybersecurity, Vol. 12, Issue 3, 2022</div>
-                    <a href="#" class="publication-link">View Publication</a>
-                </li>
-                <li class="publication-item">
-                    <div class="publication-title">"Improving Accuracy of Sentiment Analysis through Hybrid CNN-LSTM Models"</div>
-                    <div class="publication-authors">Your Name, Co-author Name</div>
-                    <div class="publication-journal">International Conference on Machine Learning, 2021</div>
-                    <a href="#" class="publication-link">View Publication</a>
-                </li>
-            </ul>
-        </section>
+            <!-- Joint Convener - Bangladesh Democratic Student's Society -->
+            <div class="leadership-item">
+                <div class="leadership-header">
+                    <div>
+                        <h3 class="leadership-title">Joint Convener (Top Ranked)</h3>
+                        <div class="leadership-organization">Bangladesh Democratic Student's Society</div>
+                    </div>
+                    <span class="leadership-period">2019 - Present</span>
+                </div>
+                <div class="leadership-description">
+                    <p>Serving as a key leader in one of Bangladesh's largest student organizations, which played a pivotal role in the July 2025 uprising that led to significant democratic reforms. Our movement successfully abolished the discriminatory quota system and contributed to the removal of the autocratic government, paving the way for stronger democratic institutions.</p>
+                    <div class="leadership-impact">
+                        <h4>Democratic Achievements:</h4>
+                        <ul>
+                            <li>Led student mobilization efforts during the July 2025 uprising</li>
+                            <li>Contributed to the abolition of the discriminatory quota system</li>
+                            <li>Organized peaceful protests and advocacy campaigns</li>
+                            <li>Facilitated dialogue between student groups and government officials</li>
+                            <li>Promoted democratic values and student rights nationwide</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="leadership-image">
+                    <img src="images/sahidminar.jpeg" alt="Bangladesh Democratic Student's Society Rally">
+                    <div class="image-caption">International Mother Language Day , February</div>
+                </div>
+            </div>
 
-        <!-- Extracurricular Activities Section -->
-        <section id="extracurricular" class="fade-in">
-            <h2>Extracurricular Activities</h2>
-            
-            <!-- Academic Startup -->
-            <div class="extracurricular-item">
-                <h3>Founder & CEO, Academic Affiliation</h3>
-                <p class="extracurricular-period">2020 - Present</p>
-                <div class="extracurricular-description">
-                    <p>Founded and developed Academic Affiliation, a platform dedicated to supporting undergraduate students from multiple universities with resources, mentorship, and educational support.</p>
-                    <p>The platform has successfully served students from the following partner universities:</p>
-                    
-                    <!-- University Logos -->
-                    <div class="logo-container">
-                        <div class="logo-item">
-                            <img src="images/Dhaka University Logo.png" alt="University of Dhaka" class="university-logo">
-                            <span class="logo-caption">University of Dhaka</span>
-                        </div>
-                        <div class="logo-item">
-                            <img src="images/University of Chittagong Logo.png" alt="University of Chittagong" class="university-logo">
-                            <span class="logo-caption">University of Chittagong</span>
-                        </div>
-                        <div class="logo-item">
-                            <img src="images/greenwich .png" alt="University of Greenwich" class="university-logo">
-                            <span class="logo-caption">University of Greenwich</span>
-                        </div>
-                        <div class="logo-item">
-                            <img src="images/sunderland.png" alt="University of Sunderland" class="university-logo">
-                            <span class="logo-caption">University of Sunderland</span>
-                        </div>
-                        <div class="logo-item">
-                            <img src="images/gazipur agri.png" alt="Gazipur Agriculture University" class="university-logo">
-                            <span class="logo-caption">University of Manchester</span>
-                        </div>
+            <!-- Former President - Notre Dame Math Club -->
+            <div class="leadership-item">
+                <div class="leadership-header">
+                    <div>
+                        <h3 class="leadership-title">Former President (Publication)</h3>
+                        <div class="leadership-organization">Notre Dame Math Club</div>
                     </div>
-                    
-                    <div class="action-links">
-                        <a href="#" class="action-link" id="startupLink">
-                            <i class="fas fa-external-link-alt"></i> Visit Platform
-                        </a>
-                        <!-- <div class="link-edit">
-                            <input type="text" id="startupLinkInput" placeholder="Enter URL here" class="link-input">
-                            <button onclick="updateLink('startupLink', 'startupLinkInput')" class="link-btn">Update</button>
-                        </div> -->
+                    <span class="leadership-period">2017 - 2019</span>
+                </div>
+                <div class="leadership-description">
+                    <p>Led the publication division of one of Bangladesh's largest mathematics clubs, working to cultivate enthusiasm for mathematics among students nationwide. Developed innovative programs and resources to make mathematics more accessible and engaging for students at all levels.</p>
+                    <div class="leadership-impact">
+                        <h4>Mathematical Impact:</h4>
+                        <ul>
+                            <li>Published monthly mathematical journals and problem sets</li>
+                            <li>Organized inter-school mathematics competitions</li>
+                            <li>Developed online resources for mathematics education</li>
+                            <li>Mentored junior students in mathematical problem-solving</li>
+                            <li>Collaborated with educators to improve mathematics curriculum</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Student Leadership -->
-            <div class="extracurricular-item">
-                <h3>Joint Convener (Top Ranked), Bangladesh Democratic Student's Society</h3>
-                <p class="extracurricular-period">2019 - Present</p>
-                <div class="extracurricular-description">
-                    <p>Serving in a leadership role at one of the prominent student organizations in Bangladesh, where I help coordinate student activities, advocate for student rights, and organize events focused on democratic values and student welfare.</p>
-                    
-                    <!-- Organization Logo -->
-                    <div class="logo-single">
-                        <img src="images/BDSC.png" alt="BDSC Logo" class="org-logo">
-                        <span class="logo-caption">Bangladesh Democratic Student's Society</span>
-                    </div>
-                    
-                    <div class="action-links">
-                        <a href="#" class="action-link" id="bdssLink">
-                            <i class="fas fa-external-link-alt"></i> Organization Website
-                        </a>
-                        <!-- <div class="link-edit">
-                            <input type="text" id="bdssLinkInput" placeholder="Enter URL here" class="link-input">
-                            <button onclick="updateLink('bdssLink', 'bdssLinkInput')" class="link-btn">Update</button>
-                        </div> -->
-                    </div>
+                <div class="leadership-image">
+                    <img src="images/SCR-20250703-sfzd.png" alt="https://ndmcbd.com/">
+                    <div class="image-caption">Notre Dame Math Club </div>
                 </div>
             </div>
-            
-            <!-- IT Consultancy -->
-            <div class="extracurricular-item">
-                <h3>IT Consultant, Supreme Court of Bangladesh</h3>
-                <p class="extracurricular-period">2021 - 2022</p>
-                <div class="extracurricular-description">
-                    <p>Provided expertise in Digital Forensics and Cybersecurity to the Prosecutors of Crime Tribunals Branch. Developed website solutions to enhance digital presence and information management for legal proceedings.</p>
-                    <p>Consulted on sensitive cybersecurity matters and provided technical guidance for handling digital evidence in court cases.</p>
-                    
-                    <!-- Supreme Court Image -->
-                    <div class="consultancy-image">
-                        <img src="/api/placeholder/500/300" alt="Supreme Court of Bangladesh" class="court-image">
-                        <span class="image-caption">Supreme Court of Bangladesh - Digital Forensics Consultancy</span>
+
+            <!-- Former Academic Team Member - Bangladesh Mathematical Olympiad -->
+            <div class="leadership-item">
+                <div class="leadership-header">
+                    <div>
+                        <h3 class="leadership-title">Former Academic Team Member</h3>
+                        <div class="leadership-organization">Bangladesh Mathematical Olympiad</div>
                     </div>
-                    
-                    <div class="action-links">
-                        <a href="#" class="action-link" id="courtLink">
-                            <i class="fas fa-external-link-alt"></i> Project Details
-                        </a>
-                        <!-- <div class="link-edit">
-                            <input type="text" id="courtLinkInput" placeholder="Enter URL here" class="link-input">
-                            <button onclick="updateLink('courtLink', 'courtLinkInput')" class="link-btn">Update</button>
-                        </div> -->
+                    <span class="leadership-period">2016 - 2019</span>
+                </div>
+                <div class="leadership-description">
+                    <p>Served as a key member of the academic team responsible for promoting STEM education and mathematical excellence across Bangladesh. Worked directly with the national program to identify and nurture mathematical talent among young students.</p>
+                    <div class="leadership-impact">
+                        <h4>STEM Promotion:</h4>
+                        <ul>
+                            <li>Designed training programs for olympiad participants</li>
+                            <li>Conducted workshops in rural and urban schools</li>
+                            <li>Mentored students for national and international competitions</li>
+                            <li>Developed educational materials for mathematics educators</li>
+                            <li>Promoted STEM careers among young students</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Keynote Speaker -->
-            <div class="extracurricular-item">
-                <h3>Keynote Speaker, University of Dhaka Education System Forum</h3>
-                <p class="extracurricular-period">2022</p>
-                <div class="extracurricular-description">
-                    <p>Invited as a student leader to speak alongside the Vice Chancellor about the education system at the University of Dhaka. Presented insights on student perspectives and proposed improvements to enhance educational outcomes.</p>
-                    
-                    <!-- Video Embed -->
-                    <div class="video-container">
-                        <iframe src="about:blank" frameborder="0" allowfullscreen class="keynote-video"></iframe>
-                    </div>
-                    <div class="video-info">
-                        <span class="video-caption">Keynote Speech on Educational Reform - University of Dhaka, 2022</span>
-                    </div>
-                    
-                    <div class="action-links">
-                        <a href="https://www.linkedin.com/posts/ahad-bin-islam-shoeb-a810611a2_i-had-the-privilege-of-being-a-keynote-speaker-activity-7257054721738199040-HrSK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC9ZksEBgx5MdTakYE4EgbZ1d4zz_9bJq2E" class="action-link" id="keynoteLink">
-                            <i class="fab fa-youtube"></i> Watch Full Video
-                        </a>
-                        <!-- <div class="link-edit">
-                            <input type="text" id="keynoteLinkInput" placeholder="Enter YouTube or video URL" class="link-input">
-                            <button onclick="updateLink('keynoteLink', 'keynoteLinkInput')" class="link-btn">Update</button>
-                        </div> -->
-                    </div>
+                <div class="leadership-image">
+                    <img src="images/BdMO 2025 Selection Result Banner.webp" alt="Bangladesh Mathematical Olympiad Training">
+                    <div class="image-caption">Bangladesh Mathematical Olympiad Training Workshop</div>
                 </div>
             </div>
-            
-            <!-- YSSE Leadership Program -->
-            <div class="extracurricular-item">
-                <h3>Program Conductor, YSSE Youth Leadership Platform</h3>
-                <p class="extracurricular-period">2023</p>
-                <div class="extracurricular-description">
-                    <p>Conducted programs focused on "Productivity of AI in Leadership" at YSSE, one of the largest youth leadership platforms in the country. Guided young leaders on leveraging AI tools for enhancing leadership capabilities and organizational efficiency.</p>
-                    
-                    <!-- YSSE Logo -->
-                    <div class="logo-single">
-                        <img src="/api/placeholder/100/100" alt="YSSE Logo" class="org-logo">
-                        <span class="logo-caption">Youth Society for Social Empowerment</span>
+
+            <!-- Environmental Leadership -->
+            <div class="leadership-item">
+                <div class="leadership-header">
+                    <div>
+                        <h3 class="leadership-title">Environmental Initiative Leader</h3>
+                        <div class="leadership-organization">Tree Plantation & Environmental Conservation</div>
                     </div>
-                    
-                    <div class="action-links">
-                        <a href="#" class="action-link" id="ysseLink">
-                            <i class="fas fa-external-link-alt"></i> Program Details
-                        </a>
-                        <!-- <div class="link-edit">
-                            <input type="text" id="ysseLinkInput" placeholder="Enter URL here" class="link-input">
-                            <button onclick="updateLink('ysseLink', 'ysseLinkInput')" class="link-btn">Update</button>
-                        </div> -->
+                    <span class="leadership-period">2022 - Present</span>
+                </div>
+                <div class="leadership-description">
+                    <p>Leading comprehensive environmental conservation efforts with a focus on afforestation and sustainable development. Successfully collaborated with government agencies to organize large-scale environmental initiatives that promote ecological awareness and climate action.</p>
+                    <div class="leadership-impact">
+                        <h4>Environmental Impact:</h4>
+                        <ul>
+                            <li>Participated Tree Fair in collaboration with Ministry of Agriculture (June 19-21, 2025)</li>
+                            <li>Planted trees across various districts</li>
+                            <li>Educated students about environmental conservation</li>
+                            <li>Established community gardens in urban areas</li>
+                            <li>Promoted sustainable practices among youth</li>
+                        </ul>
                     </div>
+                </div>
+                <div class="leadership-image">
+                    <img src="images/WhatsApp Image.jpeg" alt="Tree Fair 2025">
+                     <div class="image-caption">Tree Fair 2025 - Collaboration with Ministry of Agriculture</div>
+                    <img src="images/WhatsApp Image (1).jpeg" alt="With Honorable Additional Secretary,Dhaka Zone, Ministry of Agriculture">
+                    <div class="image-caption">Tree Fair 2025 - Collaboration with Ministry of Agriculture</div>
+                </div>
+            </div>
+
+            <!-- IT Consultant - Supreme Court -->
+            <div class="leadership-item">
+                <div class="leadership-header">
+                    <div>
+                        <h3 class="leadership-title">IT Consultant & Developer</h3>
+                        <div class="leadership-organization">Supreme Court of Bangladesh</div>
+                    </div>
+                    <span class="leadership-period">2021 - 2022</span>
+                </div>
+                <div class="leadership-description">
+                    <p>Provided strategic IT consulting and development services to the Supreme Court of Bangladesh, focusing on digital transformation and modernization of legal processes. Worked directly with legal professionals to implement technology solutions that enhanced judicial efficiency and accessibility.</p>
+                    <div class="leadership-impact">
+                        <h4>Digital Transformation:</h4>
+                        <ul>
+                            <li>Developed digital case management systems</li>
+                            <li>Implemented cybersecurity protocols for legal documents</li>
+                            <li>Created online platforms for legal proceedings</li>
+                            <li>Trained legal staff on digital forensics</li>
+                            <li>Enhanced judicial accessibility through technology</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="leadership-image">
+                    <img src="images/ICT.jpg" alt="Supreme Court IT Consultation">
+                    <div class="image-caption">Supreme Court of Bangladesh - Digital Transformation Initiative</div>
                 </div>
             </div>
         </section>
 
         <!-- Awards Section -->
-        <section id="awards" class="fade-in">
-            <h2>Awards & Honors</h2>
+        <section id="awards">
+            <h2>Awards & Recognition</h2>
             <ul class="awards-list">
+                <li class="award-item">
+                    <div class="award-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>Full Scholarship Recipient</h3>
+                        <p>Selected for full scholarship to attend the prestigious Dubai World Youth Leadership Conference, recognizing exceptional leadership potential and social impact.</p>
+                        <span class="award-date">2025</span>
+                        <span class="award-issuer">Dubai World Youth Leadership Conference</span>
+                    </div>
+                </li>
                 <li class="award-item">
                     <div class="award-icon">
                         <i class="fas fa-trophy"></i>
                     </div>
                     <div class="award-content">
-                        <h3>Best Research Paper Award</h3>
-                        <p>Awarded for outstanding contribution in the field of machine learning and cybersecurity research.</p>
-                        <span class="award-date">2022</span>
-                        <span class="award-issuer">International Conference on Machine Learning & Security</span>
+                        <h3>Outstanding Youth Leader Award</h3>
+                        <p>Recognized for exceptional contributions to student rights advocacy and democratic movement leadership.</p>
+                        <span class="award-date">2024</span>
+                        <span class="award-issuer">Bangladesh Student Leadership Council</span>
                     </div>
                 </li>
                 <li class="award-item">
@@ -607,21 +1312,10 @@
                         <i class="fas fa-medal"></i>
                     </div>
                     <div class="award-content">
-                        <h3>Academic Excellence Scholarship</h3>
-                        <p>Received for maintaining outstanding academic performance throughout undergraduate studies.</p>
-                        <span class="award-date">2018-2022</span>
-                        <span class="award-issuer">University Name</span>
-                    </div>
-                </li>
-                <li class="award-item">
-                    <div class="award-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <div class="award-content">
-                        <h3>Top 30 Hackathon Winner</h3>
-                        <p>First place in the national Development hackathon for developing an innovative solution for network security.</p>
-                        <span class="award-date">2021</span>
-                        <span class="award-issuer">National Cybersecurity Association</span>
+                        <h3>Social Impact Entrepreneur Award</h3>
+                        <p>Honored for founding educational platforms that have positively impacted thousands of students across multiple countries.</p>
+                        <span class="award-date">2023</span>
+                        <span class="award-issuer">International Social Innovation Foundation</span>
                     </div>
                 </li>
                 <li class="award-item">
@@ -629,44 +1323,49 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <div class="award-content">
-                        <h3>Leadership Excellence Award</h3>
-                        <p>Recognized for exceptional leadership qualities and contributions to student community.</p>
-                        <span class="award-date">2020</span>
-                        <span class="award-issuer">Student Leadership Council</span>
+                        <h3>Environmental Conservation Champion</h3>
+                        <p>Recognized for outstanding contributions to environmental conservation and sustainable development initiatives.</p>
+                        <span class="award-date">2024</span>
+                        <span class="award-issuer">Ministry of Environment, Bangladesh</span>
                     </div>
                 </li>
             </ul>
         </section>
-        <!-- provide he code -->
 
         <!-- Purpose Statement Section -->
-        <section id="purpose" class="fade-in">
+        <section id="purpose">
             <h2>Purpose Statement</h2>
             <div class="purpose-content">
                 <div class="purpose-text">
-                    <h3 class="purpose-heading">Why I'm Pursuing Advanced Studies in ML & Cybersecurity</h3>
-                    <p>My journey in the fields of Machine Learning and Cybersecurity has been driven by a profound interest in creating intelligent systems that can protect digital infrastructure while advancing technological capabilities. Having worked on several projects that bridge these domains, I have witnessed firsthand the transformative potential of AI-powered security solutions.</p>
+                    <h3 class="purpose-heading">Why I'm Pursuing Leadership, Policy Dialogue & Diplomacy Programs</h3>
+                    <p>My journey as a youth leader and social entrepreneur has been fundamentally shaped by a deep belief that transformative change occurs at the intersection of grassroots activism and policy innovation. Through my experiences leading student movements, founding educational platforms, and working with government institutions, I have witnessed firsthand how effective leadership can bridge the gap between community needs and institutional solutions.</p>
                     
-                    <p>Through my Masters/PhD studies, I aim to explore the intersection of machine learning algorithms and cybersecurity frameworks to develop novel approaches for threat detection, vulnerability assessment, and automated defense mechanisms. My research interests specifically focus on developing adaptive security systems that can learn from and respond to emerging threats in real-time, while maintaining privacy and ethical considerations.</p>
+                    <p>The July 2025 uprising in Bangladesh, where I served as a key organizer, demonstrated the power of strategic youth leadership in driving democratic reform. Our movement's success in abolishing discriminatory quota systems and promoting democratic governance reinforced my conviction that young leaders must be equipped with sophisticated policy analysis skills and diplomatic acumen to navigate complex political landscapes effectively.</p>
                     
-                    <p>Beyond academic pursuits, I am committed to translating research into practical applications that can benefit organizations and individuals. I believe that the next generation of cybersecurity solutions will rely heavily on sophisticated machine learning techniques, and I aspire to be at the forefront of this evolution, contributing meaningful research that bridges theoretical advancements with real-world implementation.</p>
+                    <p>My work founding IT For All and Academic Affiliation, which has trained over 5,000 students including 2,000+ women across Bangladesh, UK, and Australia, has taught me that sustainable social change requires not just passion, but also strategic policy frameworks and cross-cultural collaboration. These experiences have highlighted the critical importance of understanding global governance structures, international development policies, and diplomatic protocols.</p>
                     
-                    <p>Ultimately, my goal is to contribute to a safer digital ecosystem where artificial intelligence serves as a powerful ally in protecting critical infrastructure, personal data, and digital rights. Through rigorous research, collaboration with industry partners, and a commitment to ethical AI development, I hope to make significant contributions that advance both fields and address the complex security challenges of our increasingly connected world.</p>
+                    <p>Through my environmental conservation initiatives, including collaboration with the Ministry of Agriculture for the Tree Fair 2025, I have learned that addressing climate change and environmental degradation requires multilateral cooperation and sophisticated policy dialogue. These challenges transcend national boundaries and demand leaders who can navigate complex international negotiations and build consensus across diverse stakeholder groups.</p>
+                    
+                    <p>My recognition with a full scholarship to the Dubai World Youth Leadership Conference validates my commitment to developing the next generation of policy leaders. However, I recognize that to maximize my impact, I need advanced training in diplomatic protocols, international relations theory, policy analysis frameworks, and cross-cultural negotiation strategies.</p>
+                    
+                    <p>I am particularly drawn to programs that emphasize the intersection of youth leadership and policy innovation because I believe that the most pressing global challenges – from climate change to educational inequality to democratic governance – require fresh perspectives combined with institutional knowledge. My goal is to develop the skills necessary to translate grassroots energy into effective policy solutions and to build bridges between diverse communities and formal governance structures.</p>
+                    
+                    <p>Ultimately, I envision myself as a leader who can operate effectively across multiple domains – from local community organizing to international diplomatic forums. I aspire to contribute to a more just, sustainable, and inclusive world by developing policy solutions that are both innovative and implementable, and by fostering dialogue that transcends traditional boundaries of geography, culture, and ideology.</p>
                 </div>
             </div>
         </section>
 
         <!-- References Section -->
-        <section id="references" class="fade-in">
+        <section id="references">
             <h2>References</h2>
-            <p class="references-intro">The following individuals can be contacted to verify my qualifications, experience, and character. Please feel free to reach out to them for more information about my academic and professional background.</p>
+            <p class="references-intro">The following individuals can be contacted to verify my qualifications, leadership experience, and character. Please feel free to reach out to them for more information about my work and impact.</p>
             
             <div class="references-grid">
                 <!-- Reference 1 -->
                 <div class="reference-card">
                     <div class="reference-header">
                         <div class="reference-avatar">
-                            <img src="images/Kamrul Hasan Picture.jpg" alt="Dr. Michael Johnson" class="reference-image">
+                            <img src="images/Kamrul Hasan Picture.jpg" alt="Dr. Kamrul Hasan" class="reference-image">
                         </div>
                         <div class="reference-info">
                             <h3 class="reference-name">Dr. Kamrul Hasan</h3>
@@ -676,12 +1375,12 @@
                     </div>
                     <div class="reference-relation">
                         <i class="fas fa-briefcase reference-icon"></i>
-                        <span>Professional Supervisor</span>
+                        <span>Research Supervisor & Mentor</span>
                     </div>
                     <div class="reference-contact">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <a href="mailto:mjohnson@techcompany.com">mhasan1@tnstate.edu</a>
+                            <a href="mailto:mhasan1@tnstate.edu">mhasan1@tnstate.edu</a>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone-alt"></i>
@@ -694,22 +1393,22 @@
                 <div class="reference-card">
                     <div class="reference-header">
                         <div class="reference-avatar">
-                            <img src="images/Upoma_kabir_madam.jpg" alt="Prof. Sarah Williams" class="reference-image">
+                            <img src="images/Upoma_kabir_madam.jpg" alt="Dr. Upoma Kabir" class="reference-image">
                         </div>
                         <div class="reference-info">
-                            <h3 class="reference-name">Dr. Upoma Kabir </h3>
+                            <h3 class="reference-name">Dr. Upoma Kabir</h3>
                             <p class="reference-title">Dean of the Faculty of Engineering and Technology</p>
                             <p class="reference-institution">University of Dhaka</p>
                         </div>
                     </div>
                     <div class="reference-relation">
                         <i class="fas fa-project-diagram reference-icon"></i>
-                        <span>Research mentor</span>
+                        <span>Academic Mentor & Advisor</span>
                     </div>
                     <div class="reference-contact">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <a href="mailto:swilliams@university.edu">swilliams@university.edu</a>
+                            <a href="mailto:upoma@du.ac.bd">upoma@du.ac.bd</a>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone-alt"></i>
@@ -726,18 +1425,18 @@
                         </div>
                         <div class="reference-info">
                             <h3 class="reference-name">Dr. Mamun Or Roshid</h3>
-                            <p class="reference-title">Professor and My Supervisor</p>
+                            <p class="reference-title">Professor and Academic Supervisor</p>
                             <p class="reference-institution">University of Dhaka</p>
                         </div>
                     </div>
                     <div class="reference-relation">
                         <i class="fas fa-flask reference-icon"></i>
-                        <span>Research Collaborator</span>
+                        <span>Academic Supervisor</span>
                     </div>
                     <div class="reference-contact">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <a href="mailto:rchen@research.org">rchen@research.org</a>
+                            <a href="mailto:mamun@du.ac.bd">mamun@du.ac.bd</a>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone-alt"></i>
@@ -752,13 +1451,13 @@
                     <i class="fas fa-info-circle"></i>
                 </div>
                 <div class="note-text">
-                    <p>Please contact me before reaching out to my references. Additional references are available upon request.</p>
+                    <p>Please contact me before reaching out to my references. Additional references from government officials and international collaborators are available upon request.</p>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="fade-in">
+        <section id="contact">
             <h2>Contact Me</h2>
             <div class="contact-info">
                 <div class="contact-item">
@@ -799,6 +1498,226 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- JavaScript for Navigation and Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const menuToggle = document.getElementById('menuToggle');
+            const navMenu = document.getElementById('navMenu');
+
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    
+                    // Change hamburger icon to X when menu is open
+                    const icon = menuToggle.querySelector('i');
+                    if (navMenu.classList.contains('active')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            }
+
+            // Smooth scrolling for navigation links
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Close mobile menu if open
+                    if (navMenu && navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                        const icon = menuToggle.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        const navHeight = document.querySelector('nav').offsetHeight;
+                        const targetPosition = targetSection.offsetTop - navHeight - 20;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                const isClickInsideNav = navMenu.contains(event.target);
+                const isClickOnToggle = menuToggle.contains(event.target);
+                
+                if (!isClickInsideNav && !isClickOnToggle && navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                    const icon = menuToggle.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+
+            // Highlight current section in navigation
+            function highlightNavigation() {
+                const sections = document.querySelectorAll('section[id]');
+                const navLinks = document.querySelectorAll('nav a[href^="#"]');
+                
+                let currentSectionId = '';
+                const navHeight = document.querySelector('nav').offsetHeight;
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - navHeight - 50;
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+                    
+                    if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+                        currentSectionId = sectionId;
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + currentSectionId) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+            
+            // Throttle scroll events for better performance
+            let scrollTimeout;
+            window.addEventListener('scroll', function() {
+                if (scrollTimeout) {
+                    clearTimeout(scrollTimeout);
+                }
+                scrollTimeout = setTimeout(highlightNavigation, 10);
+            });
+            
+            // Initial call to highlight the navigation
+            highlightNavigation();
+
+            // Add smooth fade-in animation for sections
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px 0px -50px 0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all sections for fade-in animation
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(30px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+
+            // Add active class styles for navigation
+            const style = document.createElement('style');
+            style.textContent = `
+                nav a.active {
+                    background-color: var(--primary-color) !important;
+                    color: var(--info-color) !important;
+                }
+                nav a.active:after {
+                    width: 100% !important;
+                }
+            `;
+            document.head.appendChild(style);
+
+            // Smooth scrolling for any internal links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href === '#' || href === '') return;
+                    
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const navHeight = document.querySelector('nav').offsetHeight;
+                        const targetPosition = target.offsetTop - navHeight - 20;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Add back to top functionality on scroll
+            let backToTopButton;
+            function createBackToTopButton() {
+                backToTopButton = document.createElement('button');
+                backToTopButton.innerHTML = '<i class="fas fa-arrow-up"></i>';
+                backToTopButton.setAttribute('aria-label', 'Back to top');
+                backToTopButton.style.cssText = `
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: var(--secondary-color);
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                    z-index: 1000;
+                    transition: all 0.3s ease;
+                    font-size: 1.2rem;
+                `;
+                
+                document.body.appendChild(backToTopButton);
+                
+                backToTopButton.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+                
+                // Show/hide back to top button
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 500) {
+                        backToTopButton.style.display = 'flex';
+                    } else {
+                        backToTopButton.style.display = 'none';
+                    }
+                });
+                
+                // Hover effects
+                backToTopButton.addEventListener('mouseenter', function() {
+                    this.style.backgroundColor = 'var(--primary-color)';
+                    this.style.transform = 'translateY(-3px)';
+                });
+                
+                backToTopButton.addEventListener('mouseleave', function() {
+                    this.style.backgroundColor = 'var(--secondary-color)';
+                    this.style.transform = 'translateY(0)';
+                });
+            }
+            
+            createBackToTopButton();
+        });
+    </script>
 </body>
 </html>
