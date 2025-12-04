@@ -9,17 +9,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
         :root {
-            --primary-color: #1a3a5f;
-            --secondary-color: #0d6efd;
-            --accent-color: #dc3545;
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #e74c3c;
             --light-color: #f8f9fa;
-            --dark-color: #343a40;
-            --text-color: #212529;
-            --bg-color: #fff;
-            --muted-color: #6c757d;
-            --border-color: #dee2e6;
-            --success-color: #198754;
-            --info-color: #0dcaf0;
+            --dark-color: #2c3e50;
+            --text-color: #2c3e50;
+            --bg-color: #ffffff;
+            --muted-color: #7f8c8d;
+            --border-color: #ecf0f1;
+            --success-color: #27ae60;
+            --info-color: #3498db;
+            --gradient-start: #2c3e50;
+            --gradient-end: #34495e;
         }
 
         * {
@@ -43,11 +45,11 @@
 
         /* Header Section */
         header {
-            background: linear-gradient(135deg, var(--primary-color) 0%, #0d4377 100%);
+            background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
             color: white;
-            padding: 40px 0;
+            padding: 35px 0;
             position: relative;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
         }
 
         .header-content {
@@ -178,16 +180,16 @@
 
         /* Main Content */
         main {
-            padding: 60px 0;
+            padding: 40px 0;
             background-color: #f9fafb;
         }
 
         section {
-            margin-bottom: 60px;
-            padding: 30px;
+            margin-bottom: 40px;
+            padding: 25px;
             background-color: white;
             border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s, box-shadow 0.3s;
             border: 1px solid var(--border-color);
         }
@@ -427,42 +429,21 @@
             box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
         }
 
-        /* Technical Projects Section */
-        .projects-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
+        /* Professional Enhancement Styles */
+        .skill-item {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        .project-placeholder {
-            background: linear-gradient(135deg, var(--light-color) 0%, #e9ecef 100%);
-            padding: 40px;
-            border-radius: 12px;
-            text-align: center;
-            border: 2px dashed var(--border-color);
-            transition: all 0.3s;
-        }
-
-        .project-placeholder:hover {
-            border-color: var(--secondary-color);
-            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-        }
-
-        .placeholder-content i {
-            font-size: 3rem;
-            color: var(--secondary-color);
-            margin-bottom: 15px;
-        }
-
-        .placeholder-content h3 {
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-
-        .placeholder-content p {
-            color: var(--muted-color);
-            font-size: 0.95rem;
+        .skill-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
 
         /* Awards Section */
@@ -830,66 +811,98 @@
             }
         }
 
-        /* Responsive Design */
+        /* Enhanced Mobile Responsiveness */
         @media (max-width: 768px) {
             .container {
                 padding: 0 15px;
             }
 
             header {
-                padding: 30px 0;
+                padding: 25px 0;
                 position: relative;
             }
 
             .header-content {
                 flex-direction: column;
                 text-align: center;
-                padding-top: 50px;
+                padding-top: 40px;
             }
 
             .profile-image {
-                width: 140px;
-                height: 140px;
-                margin-bottom: 20px;
-            }
-
-            .header-text h1 {
-                font-size: 1.8rem;
-                margin-bottom: 10px;
-            }
-
-            .header-text h2 {
-                font-size: 1rem;
-                margin-bottom: 8px;
-            }
-
-            .header-subtext {
-                font-size: 0.95rem;
+                width: 120px;
+                height: 120px;
                 margin-bottom: 15px;
             }
 
+            .header-text h1 {
+                font-size: 1.6rem;
+                margin-bottom: 8px;
+                line-height: 1.2;
+            }
+
+            .header-text h2 {
+                font-size: 0.9rem;
+                margin-bottom: 6px;
+                line-height: 1.3;
+            }
+
+            .header-subtext {
+                font-size: 0.85rem;
+                margin-bottom: 12px;
+                line-height: 1.4;
+            }
+
             .social-links {
-                gap: 12px;
+                gap: 10px;
+                flex-wrap: wrap;
+                justify-content: center;
             }
 
             .social-links a {
-                width: 35px;
-                height: 35px;
-                font-size: 1.2rem;
+                width: 32px;
+                height: 32px;
+                font-size: 1.1rem;
             }
 
             main {
-                padding: 40px 0;
+                padding: 25px 0;
             }
 
             section {
-                margin-bottom: 40px;
-                padding: 20px;
+                margin-bottom: 25px;
+                padding: 15px;
             }
 
             section h2 {
-                font-size: 1.5rem;
-                margin-bottom: 20px;
+                font-size: 1.3rem;
+                margin-bottom: 15px;
+            }
+
+            .skills-container {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .skill-category {
+                padding: 15px;
+            }
+
+            .research-interests-content {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .research-area {
+                padding: 15px;
+            }
+
+            nav ul {
+                padding: 0;
+            }
+
+            nav a {
+                padding: 12px 15px;
+                font-size: 0.9rem;
             }
 
             .leadership-item {
@@ -1372,10 +1385,10 @@
                     <h2>PhD & MSc Candidate • AI Researcher • Data Scientist • ML Engineer</h2>
                     <p class="header-subtext">Advancing AI Research in Cybersecurity, Health-AI, Agri-AI, HCI, NLP & Data Engineering</p>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/ahad-bin-islam-shoeb-a810611a2/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/ahad-bin-islam-shoeb-b69154373" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/ShoebAhad" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
                         <a href="#" target="_blank" aria-label="Google Scholar Profile"><i class="fas fa-graduation-cap"></i></a>
-                        <a href="mailto:ahadbinislam1111@gmail.com" target="_blank" aria-label="Email Contact"><i class="fas fa-envelope"></i></a>
+                        <a href="mailto:ahadbinislamshoeb@gmail.com" target="_blank" aria-label="Email Contact"><i class="fas fa-envelope"></i></a>
                         <a href="#" target="_blank" aria-label="ResearchGate Profile"><i class="fab fa-researchgate"></i></a>
                         <a href="#" target="_blank" aria-label="ORCID Profile"><i class="fab fa-orcid"></i></a>
                     </div>
@@ -1395,7 +1408,6 @@
                 <li><a href="#research-interests">Research Interests</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#leadership">Leadership</a></li>
                 <li><a href="#publications">Publications</a></li>
@@ -1415,13 +1427,11 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I am a <strong>PhD and MSc candidate</strong> with demonstrated expertise in <strong>Artificial Intelligence, Cybersecurity, Data Science, and Human-Computer Interaction</strong>. My research portfolio spans <strong>adversarial AI, federated learning security, health-AI applications, agricultural technology, and natural language processing</strong> - with published work in prestigious IEEE conferences including <strong>IEEE CCNC 2025</strong>.</p>
+                    <p>I am a <strong>PhD and MSc candidate</strong> with demonstrated expertise in <strong>Artificial Intelligence, Cybersecurity, Data Science, and Human-Computer Interaction</strong>. My research portfolio includes published work in <strong>IEEE CCNC 2025</strong> on adversarial federated learning, health-AI applications with 95% clinical prediction accuracy, and agricultural IoT systems through my <strong>STPS-NET</strong> thesis.</p>
                     
-                    <p>My research journey combines <strong>theoretical rigor with practical impact</strong>. As a <strong>Machine Learning Engineer at Turing</strong> working on <strong>Google DeepMind projects</strong>, I have contributed to cutting-edge AI research while developing production-scale systems. My undergraduate thesis on <strong>STPS-NET: A Federated Spatio-Temporal Plant Specific Network</strong> demonstrates expertise in <strong>agricultural AI and IoT applications</strong>, while my IEEE CCNC paper advances <strong>cybersecurity in distributed AI systems</strong>.</p>
+                    <p>As a <strong>Machine Learning Engineer at Turing</strong> contributing to <strong>Google DeepMind projects</strong>, I combine theoretical research with practical implementation. My multidisciplinary experience spans <strong>intrusion detection in cyber-physical systems, vulnerability assessment, ML-based security defense mechanisms, and applied AI in agriculture and healthcare</strong>.</p>
                     
-                    <p>My multidisciplinary approach integrates <strong>machine learning, data engineering, cybersecurity, and human-centered design</strong>. Through founding <strong>IT For All</strong>, I have trained over 5,000 students in AI and data science fundamentals, demonstrating commitment to inclusive technology education. My work in <strong>health-AI applications</strong> at Digital Readiness and Intelligence achieved 95% accuracy in clinical prediction models, showcasing expertise in <strong>medical AI and explainable systems</strong>.</p>
-                    
-                    <p>I am seeking <strong>PhD and MSc opportunities</strong> to advance research in <strong>Cybersecurity (adversarial AI, federated learning security), Agri-AI (precision agriculture, IoT systems), Health-AI (clinical prediction, medical NLP), Machine Learning (deep learning, reinforcement learning), HCI and NLP (human-AI interaction, multimodal systems), Data Science (big data analytics, visualization), and Data Engineering (distributed systems, real-time processing)</strong>. My goal is to contribute to interdisciplinary research that addresses global challenges through innovative AI solutions.</p>
+                    <p>Through founding <strong>IT For All</strong> and training over 5,000 students, I demonstrate commitment to inclusive AI education and international collaboration. I seek <strong>PhD and MSc opportunities</strong> to advance research in cybersecurity, applied machine learning, and data-driven solutions for global challenges.</p>
                 </div>
             </div>
         </section>
@@ -1499,185 +1509,96 @@
 
         <!-- Skills Section -->
         <section id="skills">
-            <h2>Research & Technical Skills</h2>
+            <h2>Research & Technical Expertise</h2>
             <div class="skills-container">
                 
-                <!-- AI & Machine Learning -->
+                <!-- Core Research Methods -->
                 <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> Artificial Intelligence & Machine Learning</h3>
+                    <h3><i class="fas fa-microscope"></i> Research Methodology & Analysis</h3>
                     <div class="skill-items">
-                        <span class="skill-item">Deep Learning & Neural Networks</span>
-                        <span class="skill-item">Computer Vision</span>
-                        <span class="skill-item">Natural Language Processing (NLP)</span>
-                        <span class="skill-item">Reinforcement Learning (RLHF, RLEF, SFT)</span>
-                        <span class="skill-item">Federated Learning</span>
-                        <span class="skill-item">Transformer Models (BERT, RoBERTa, DistilBERT)</span>
-                        <span class="skill-item">Explainable AI (SHAP, LIME)</span>
-                        <span class="skill-item">Statistical Modeling Techniques</span>
-                        <span class="skill-item">MLOps & Model Deployment</span>
-                        <span class="skill-item">Azure ML & MLOps</span>
-                        <span class="skill-item">AutoML Systems</span>
-                        <span class="skill-item">Adversarial Machine Learning</span>
-                    </div>
-                </div>
-
-                <!-- Data Engineering & Big Data -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Data Engineering & Big Data</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Apache Spark</span>
-                        <span class="skill-item">Apache Kafka</span>
-                        <span class="skill-item">Apache Airflow</span>
-                        <span class="skill-item">Hadoop Ecosystem</span>
-                        <span class="skill-item">ETL/ELT Pipelines</span>
-                        <span class="skill-item">Data Extraction, Transformation & Loading</span>
-                        <span class="skill-item">Real-time Data Processing</span>
-                        <span class="skill-item">Data Visualization</span>
-                        <span class="skill-item">Data Analysis & Mining</span>
-                        <span class="skill-item">Stream Processing</span>
-                        <span class="skill-item">Data Warehousing</span>
-                        <span class="skill-item">Data Lake Architecture</span>
-                    </div>
-                </div>
-
-                <!-- Programming Languages -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Python (Advanced)</span>
-                        <span class="skill-item">Java</span>
-                        <span class="skill-item">C/C++</span>
-                        <span class="skill-item">C#</span>
-                        <span class="skill-item">JavaScript/TypeScript</span>
-                        <span class="skill-item">Kotlin</span>
-                        <span class="skill-item">SQL</span>
-                        <span class="skill-item">Shell Scripting</span>
-                        <span class="skill-item">R (Statistical Computing)</span>
-                        <span class="skill-item">Scala (Big Data)</span>
-                    </div>
-                </div>
-
-                <!-- Cloud & DevOps -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-cloud"></i> Cloud Platforms & DevOps</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">AWS (Lambda, ECS, EKS, S3, API Gateway, SageMaker)</span>
-                        <span class="skill-item">Azure (ML, SIEM, Container Services)</span>
-                        <span class="skill-item">Google Cloud Platform</span>
-                        <span class="skill-item">Kubernetes</span>
-                        <span class="skill-item">Docker</span>
-                        <span class="skill-item">Serverless Architecture</span>
-                        <span class="skill-item">CI/CD Pipelines</span>
-                        <span class="skill-item">Infrastructure as Code</span>
-                        <span class="skill-item">Microservices Architecture</span>
-                    </div>
-                </div>
-
-                <!-- Web Development -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-globe"></i> Web Development</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">React.js</span>
-                        <span class="skill-item">Angular</span>
-                        <span class="skill-item">Node.js</span>
-                        <span class="skill-item">Django</span>
-                        <span class="skill-item">FastAPI</span>
-                        <span class="skill-item">HTML5/CSS3</span>
-                        <span class="skill-item">RESTful APIs</span>
-                        <span class="skill-item">GraphQL</span>
-                        <span class="skill-item">WebSockets</span>
-                    </div>
-                </div>
-
-                <!-- Databases & Storage -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> Databases & Storage</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">MongoDB</span>
-                        <span class="skill-item">MySQL</span>
-                        <span class="skill-item">PostgreSQL</span>
-                        <span class="skill-item">Redis</span>
-                        <span class="skill-item">Elasticsearch</span>
-                        <span class="skill-item">Apache Cassandra</span>
-                        <span class="skill-item">InfluxDB (Time Series)</span>
-                        <span class="skill-item">Graph Databases (Neo4j)</span>
-                    </div>
-                </div>
-
-                <!-- Cybersecurity & Network -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-shield-alt"></i> Cybersecurity & Networking</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Cybersecurity</span>
-                        <span class="skill-item">Network Engineering</span>
-                        <span class="skill-item">Digital Forensics</span>
-                        <span class="skill-item">Azure SIEM</span>
-                        <span class="skill-item">Penetration Testing</span>
-                        <span class="skill-item">Blockchain Technology</span>
-                        <span class="skill-item">IoT Security</span>
-                    </div>
-                </div>
-
-                <!-- Academic Research & Publication -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-graduation-cap"></i> Academic Research & Publication</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Peer-Reviewed Publications (IEEE CCNC)</span>
-                        <span class="skill-item">Research Methodology Design</span>
-                        <span class="skill-item">Statistical Analysis & Hypothesis Testing</span>
-                        <span class="skill-item">Literature Review & Survey</span>
-                        <span class="skill-item">Grant Writing & Proposal Development</span>
-                        <span class="skill-item">Technical Writing & Documentation</span>
-                        <span class="skill-item">Conference Presentation</span>
-                        <span class="skill-item">International Research Collaboration</span>
-                        <span class="skill-item">Cross-disciplinary Research</span>
                         <span class="skill-item">Experimental Design & Validation</span>
+                        <span class="skill-item">Statistical Hypothesis Testing</span>
+                        <span class="skill-item">Peer-Review Publication (IEEE CCNC)</span>
+                        <span class="skill-item">Quantitative & Qualitative Analysis</span>
+                        <span class="skill-item">Cross-disciplinary Research</span>
+                        <span class="skill-item">Literature Survey & Meta-Analysis</span>
                         <span class="skill-item">Research Ethics & Integrity</span>
+                        <span class="skill-item">Grant Proposal Writing</span>
                     </div>
                 </div>
 
-                <!-- Advanced Mathematical Foundations -->
+                <!-- AI & Machine Learning Research -->
                 <div class="skill-category">
-                    <h3><i class="fas fa-calculator"></i> Mathematical & Theoretical Foundations</h3>
+                    <h3><i class="fas fa-brain"></i> AI & Machine Learning</h3>
                     <div class="skill-items">
-                        <span class="skill-item">Advanced Linear Algebra</span>
-                        <span class="skill-item">Multivariable Calculus & Optimization</span>
-                        <span class="skill-item">Probability Theory & Stochastic Processes</span>
-                        <span class="skill-item">Statistical Inference & Bayesian Methods</span>
+                        <span class="skill-item">Federated Learning & Security</span>
+                        <span class="skill-item">Adversarial AI & Defense Mechanisms</span>
+                        <span class="skill-item">Deep Neural Networks & Optimization</span>
+                        <span class="skill-item">Reinforcement Learning (RLHF, SFT)</span>
+                        <span class="skill-item">Explainable AI (SHAP, LIME)</span>
+                        <span class="skill-item">Computer Vision & Medical Imaging</span>
+                        <span class="skill-item">Natural Language Processing</span>
+                        <span class="skill-item">Ensemble Learning & Clustering</span>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity & System Analysis -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-shield-virus"></i> Cybersecurity Research</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Cyber-Physical Systems Security</span>
+                        <span class="skill-item">Intrusion Detection & Prevention</span>
+                        <span class="skill-item">Vulnerability Assessment & Analysis</span>
+                        <span class="skill-item">Network Security & Forensics</span>
+                        <span class="skill-item">IoT Security & Privacy</span>
+                        <span class="skill-item">Cryptographic Protocols</span>
+                        <span class="skill-item">SIEM & Threat Intelligence</span>
+                        <span class="skill-item">Penetration Testing</span>
+                    </div>
+                </div>
+
+                <!-- Data Science & Analytics -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-line"></i> Data Science & Engineering</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Big Data Processing (Spark, Kafka)</span>
+                        <span class="skill-item">Real-time Analytics & Streaming</span>
+                        <span class="skill-item">Data Mining & Pattern Recognition</span>
+                        <span class="skill-item">Predictive Modeling & Forecasting</span>
+                        <span class="skill-item">ETL/ELT Pipeline Design</span>
+                        <span class="skill-item">Cloud Computing (AWS, Azure)</span>
+                        <span class="skill-item">Database Systems & Optimization</span>
+                        <span class="skill-item">Data Visualization & Reporting</span>
+                    </div>
+                </div>
+
+                <!-- Programming & Development -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming & Development</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Python (Advanced - Research & ML)</span>
+                        <span class="skill-item">R (Statistical Computing)</span>
+                        <span class="skill-item">Java & Scala (Big Data)</span>
+                        <span class="skill-item">SQL & NoSQL Databases</span>
+                        <span class="skill-item">C/C++ (System Programming)</span>
+                        <span class="skill-item">MATLAB (Scientific Computing)</span>
+                        <span class="skill-item">Docker & Kubernetes</span>
+                        <span class="skill-item">Git Version Control</span>
+                    </div>
+                </div>
+
+                <!-- Mathematical & Statistical Foundations -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-calculator"></i> Mathematical Foundations</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Advanced Linear Algebra & Optimization</span>
+                        <span class="skill-item">Probability Theory & Statistics</span>
+                        <span class="skill-item">Stochastic Processes & Markov Models</span>
                         <span class="skill-item">Information Theory & Cryptography</span>
                         <span class="skill-item">Graph Theory & Network Analysis</span>
-                        <span class="skill-item">Numerical Methods & Scientific Computing</span>
-                        <span class="skill-item">Formal Methods & Logic</span>
-                        <span class="skill-item">Game Theory & Decision Theory</span>
-                    </div>
-                </div>
-
-                <!-- IoT & Emerging Technologies -->
-                <div class="skill-category">
-                    <h3><i class="fas fa-microchip"></i> IoT & Emerging Technologies</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Internet of Things (IoT)</span>
-                        <span class="skill-item">Edge Computing</span>
-                        <span class="skill-item">Sensor Networks</span>
-                        <span class="skill-item">MQTT Protocol</span>
-                        <span class="skill-item">Raspberry Pi/Arduino</span>
-                        <span class="skill-item">5G Networks</span>
-                        <span class="skill-item">Quantum Computing (Research)</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Technical Projects Section -->
-        <section id="projects">
-            <h2>Technical Projects</h2>
-            <div class="projects-container">
-                <!-- Project entries will be added here -->
-                <div class="project-placeholder">
-                    <div class="placeholder-content">
-                        <i class="fas fa-code-branch"></i>
-                        <h3>Technical Projects Coming Soon</h3>
-                        <p>This section is ready for your technical project showcases including data engineering pipelines, AI/ML models, and innovative solutions.</p>
+                        <span class="skill-item">Numerical Methods & Algorithms</span>
+                        <span class="skill-item">Signal Processing & Time Series</span>
+                        <span class="skill-item">Game Theory & Decision Analysis</span>
                     </div>
                 </div>
             </div>
@@ -2344,7 +2265,7 @@
                     </div>
                     <div class="contact-details">
                         <p class="contact-label">Email</p>
-                        <p>ahadbinislam1111@gmail.com</p>
+                        <p><a href="mailto:ahadbinislamshoeb@gmail.com" style="color: inherit; text-decoration: none;">ahadbinislamshoeb@gmail.com</a></p>
                     </div>
                 </div>
                 <div class="contact-item">
