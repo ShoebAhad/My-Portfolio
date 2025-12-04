@@ -2292,6 +2292,9 @@
     <footer>
         <div class="container">
             <p class="footer-text">&copy; 2025 Ahad Bin Islam Shoeb. All rights reserved.</p>
+            <div id="visitor-counter" style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7;">
+                <span id="visitor-count"></span>
+            </div>
         </div>
     </footer>
 
@@ -2535,6 +2538,100 @@ document.querySelectorAll('.thumb-image').forEach(img => {
                 details.style.display = 'none';
             }
         }
+
+        // Visitor Counter System (excludes owner)
+        function initVisitorCounter() {
+            const ownerIdentifiers = [
+                'ahadbinislamshoeb@gmail.com',
+                'ahad-bin-islam-shoeb',
+                'ShoebAhad',
+                '127.0.0.1',
+                'localhost'
+            ];
+            
+            // Check if this is the owner's visit
+            const userAgent = navigator.userAgent.toLowerCase();
+            const hostname = window.location.hostname.toLowerCase();
+            const isOwner = ownerIdentifiers.some(identifier => 
+                userAgent.includes(identifier.toLowerCase()) ||
+                hostname.includes(identifier.toLowerCase()) ||
+                localStorage.getItem('portfolio_owner') === 'true'
+            );
+            
+            // Get current visitor count
+            let visitorCount = parseInt(localStorage.getItem('portfolio_visitor_count') || '0');
+            
+            // Check if this is a returning visitor (within 24 hours)
+            const lastVisit = localStorage.getItem('portfolio_last_visit');
+            const now = Date.now();
+            const isNewVisit = !lastVisit || (now - parseInt(lastVisit)) > (24 * 60 * 60 * 1000);
+            
+            // Only increment if not owner and it's a new visit
+            if (!isOwner && isNewVisit) {
+                visitorCount++;
+                localStorage.setItem('portfolio_visitor_count', visitorCount.toString());
+                localStorage.setItem('portfolio_last_visit', now.toString());
+            }
+            
+            // Display visitor count
+            const visitorCountElement = document.getElementById('visitor-count');
+            if (visitorCountElement) {
+                if (isOwner) {
+                    visitorCountElement.innerHTML = `<i class="fas fa-eye"></i> Visitors: ${visitorCount} (Owner View)`;
+                } else {
+                    visitorCountElement.innerHTML = `<i class="fas fa-users"></i> Visitors: ${visitorCount}`;
+                }
+            }
+            
+            // Add admin panel for owner
+            if (isOwner) {
+                addAdminPanel(visitorCount);
+            }
+        }
+        
+        // Admin panel for owner to manage visitor count
+        function addAdminPanel(currentCount) {
+            const adminPanel = document.createElement('div');
+            adminPanel.id = 'admin-panel';
+            adminPanel.style.cssText = `
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                background: rgba(44, 62, 80, 0.9);
+                color: white;
+                padding: 10px;
+                border-radius: 8px;
+                font-size: 0.8rem;
+                z-index: 9999;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            `;
+            adminPanel.innerHTML = `
+                <div style="margin-bottom: 8px;"><strong>Admin Panel</strong></div>
+                <div>Visitors: ${currentCount}</div>
+                <button onclick="resetVisitorCount()" style="margin-top: 5px; padding: 3px 8px; font-size: 0.7rem; border: none; border-radius: 4px; cursor: pointer;">Reset Count</button>
+                <button onclick="hideAdminPanel()" style="margin: 5px 0 0 5px; padding: 3px 8px; font-size: 0.7rem; border: none; border-radius: 4px; cursor: pointer;">Hide</button>
+            `;
+            document.body.appendChild(adminPanel);
+        }
+        
+        // Reset visitor count (owner only)
+        function resetVisitorCount() {
+            localStorage.setItem('portfolio_visitor_count', '0');
+            location.reload();
+        }
+        
+        // Hide admin panel
+        function hideAdminPanel() {
+            const adminPanel = document.getElementById('admin-panel');
+            if (adminPanel) {
+                adminPanel.style.display = 'none';
+            }
+        }
+        
+        // Initialize visitor counter when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initVisitorCounter();
+        });
     </script>
 </body>
 </html>
